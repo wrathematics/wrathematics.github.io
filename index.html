@@ -1,0 +1,326 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="wrathematics.github.io : Scalable Statistics Software" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>wrathematics</title>
+    <h1>Scalable Statistics Software</h1>
+    
+    <script>
+(function(){
+  var d = document;
+  function $(s){return d.querySelector(s, d.body)}
+  function id(i){return $('[data-id='+i+']')}
+  function a(i){return $('[href="#'+i+'"]')}
+  window.addEventListener('hashchange', function(e) {
+    var next = e.newURL.match(/#(.*)$/)[1];
+    if(id(next)) {
+      $('.active').className = null;
+      $('.on').className = null;
+      id(next).className = 'active';
+      a(next).className = 'on';
+    }
+  }, false);
+  var d = document;
+  d.addEventListener('DOMContentLoaded', function loaded() {
+    var hash, el;
+    d.removeEventListener('DOMContentLoaded', loaded, false);
+    hash = window.location.hash.slice(1) || 'projects';
+    el = id(hash) || id('projects');
+    el.className = 'active';
+    a(el.dataset.id).className = 'on';
+  }, false);
+})();
+    </script>
+    <style>
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('BebasNeue-webfont.woff') format('woff'),
+       url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+::-moz-selection{background:#C65385; color: white;}
+::selection{background:#C65385; color: white;}
+body {
+  color: #373737;
+  background: #FFF6EA;
+  font-family: sans-serif;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+}
+a {
+  color: #538DB5;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+a:hover {
+  color: #CE618E;
+}
+a:focus {
+  text-decoration: underline;
+}
+head, title {
+  display: block;
+}
+title {
+  color: #ffffff;
+  cursor: default;
+  background: #7C334F;
+  background: -webkit-linear-gradient(#000000, #084B8A);
+  background: -moz-linear-gradient(#000000, #084B8A);
+  background: -o-linear-gradient(#000000, #084B8A);
+  background: linear-gradient(#000000, #084B8A);
+  font: 700 85px BebasNeueRegular, sans-serif;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: 0 1px 0 #6B2C45, 0 2px 0 #6B2C45, 0 3px 0 #6B2C45, 0 4px 0 #6B2C45, 0 5px 0 #6B2C45, 0 6px 0 #6B2C45;
+}
+title, nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+nav {
+  background: #5A7B92;
+  box-shadow: 0 0px 4px #000;
+  text-align: center;
+  border-top: 1px solid #8BB2DA;
+  border-bottom: 1px solid #8BB2DA;
+}
+nav > div {
+  width: 700px;
+  display: inline-block;
+}
+nav > div > div {
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+nav a > div {
+  display: block !important;
+}
+nav a {
+  color: #EEE;
+  display: inline-block;
+  font: 1.1em BebasNeueRegular, sans-serif;
+  padding: 10px 0;
+  text-shadow: 0 1px 1px #111, 0 2px 1px #111;
+  vertical-align: text-top;
+  width: 115px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  nav a {
+    width: auto;
+  }
+}
+nav a:hover {
+  color: #CE618E;
+}
+.on {
+  color: #76AFD6;
+}
+section {
+  display: none;
+  font-size: 17px;
+  line-height: 23px;
+  margin: 10px auto 50px;
+  width: 700px;
+}
+.active {
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+h1 > a {
+  font: 700 52px BebasNeueRegular, sans-serif;
+  text-shadow: 0 1px 1px #666, 0 2px 1px #666;
+}
+h1 {
+  color: #ffffff;
+  cursor: default;
+  padding: 10px 0;
+  background: #7C334F;
+  background: -webkit-linear-gradient(#084B8A, #045FB4);
+  background: -moz-linear-gradient(#084B8A, #045FB4);
+  background: -o-linear-gradient(#084B8A, #045FB4);
+  background: linear-gradient(#084B8A, #045FB4);
+  font: 700 25px BebasNeueRegular, sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: -.01em 0 .01em 0;
+}
+h5 {
+  text-align: center;
+  margin: -1.67em 0 1.67em 0;
+}
+hr {
+  background: -webkit-linear-gradient(left, #F0F0F0, #A040A0, #F0F0F0);
+  background: -moz-linear-gradient(left, #F0F0F0, #A040A0, #F0F0F0);
+  background: -o-linear-gradient(left, #F0F0F0, #A040A0, #F0F0F0);
+  background: linear-gradient(left, #F0F0F0, #A040A0, #F0F0F0);
+  border: none;
+  height: 1px;
+}
+code, pre {
+  background: #EEE;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  box-shadow: inset 0 0 8px #DDD;
+  color: #555;
+  padding: 0 2px;
+  text-shadow: 0 1px 0 #FFF;
+}
+code {
+  white-space: nowrap;
+}
+.chrome::before, .firefox::before, .opera::before {
+  content: '';
+<!--  background-image: url(data:image/png;base64,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);-->
+  display: inline-block;
+  margin-right: 4px;
+  height: 16px;
+  vertical-align: text-top;
+  width: 15px;
+}
+.firefox::before {
+  width: 16px;
+  background-position: -15px 0;
+}
+.opera::before {
+  background-position: -31px 0;
+}
+    </style>
+    
+    <style>
+table.pretty {
+  margin: 1em 1em 1em 2em;
+  background: whitesmoke;
+  border-collapse: collapse;
+}
+table.pretty th, table.pretty td {
+  border: 1px gainsboro solid;
+  padding: 0.2em;
+}
+table.pretty th {
+  background: gainsboro;
+  text-align: left;
+}
+table.pretty caption {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+  </style>
+  </head>
+
+
+
+
+
+
+ <body>
+    <nav>
+      <div><div>
+        <a href=#projects>Projects</a>
+        <a href=#install>Installation</a>
+        <a href=#bugs>Bugs</a>
+        <a href="https://twitter.com/wrathematics">@wrathematics</a>
+      </div></div>
+    </nav>
+    <section data-id=projects>
+    <h2> <a href="http://r-pbd.org">pbdR</a> </h2>
+      <p> 
+      The "Programming with Big Data in R" (pbdR) project seeks to elevate  
+      the statistical programming language R to supercomputers.  We achieve
+      this in part by mapping high-level syntax to low-level, scalable 
+      libraries.  The project can be used for performance gains even on
+      a laptop, but be honest; doing it on a supercomputer is way cooler.
+      <br><br>
+      Presently, I am the lead developer of several pbdR packages:
+      </p>
+      
+        <h6> <a href="http://cran.r-project.org/web/packages/pbdDEMO/index.html">pbdDEMO</a> </h6>
+        <p>
+        The pbdDEMO package is a lengthy set of package examples and demonstrations 
+        for the pbdR project, together with a comprehensive user guide in the form
+        of a textbook-style vignette.  Users unfamiliar with the pbdR project, or
+        distributed computing in general, should most definitely start with this package.
+        </p>
+        <table width=85% class="pretty">
+        <tr>
+        <th><a href=https://github.com/wrathematics/pbdDEMO>Code</a></th>   <th><a href="https://raw.github.com/wrathematics/pbdDEMO/master/README">Readme</a></th>    <th><a href=https://raw.github.com/wrathematics/pbdDEMO/master/ChangeLog>Changelog</a></th>    <th><a href="https://github.com/wrathematics/pbdDEMO/raw/master/inst/doc/pbdDEMO-guide.pdf">User Guide</a></th>    <th><a href="https://github.com/wrathematics/pbdDEMO/raw/master/man/pbdDEMO-help.pdf">Manual</a></th>
+        </tr>
+        </table>
+        <br>
+        
+        <h6> <a href="http://cran.r-project.org/web/packages/pbdDMAT/index.html">pbdDMAT</a> </h6>
+        <p>
+        The pbdDMAT package is a set of high-level wrappers of low-level methods provided
+        by the pbdBASE package for distributed matrix computations.  We offer numerous 
+        methods, everything from subsetting with `[` to lm.fit().
+        </p>
+        <table width=85% class="pretty">
+        <tr>
+        <th><a href=https://github.com/wrathematics/pbdDMAT>Code</a></th>   <th><a href="https://raw.github.com/wrathematics/pbdDMAT/master/README">Readme</a></th>    <th><a href=https://raw.github.com/wrathematics/pbdDMAT/master/ChangeLog>Changelog</a></th>    <th><a href="https://github.com/wrathematics/pbdDMAT/raw/master/inst/doc/pbdDMAT-guide.pdf">User Guide</a></th>    <th><a href="https://github.com/wrathematics/pbdDMAT/raw/master/man/pbdDMAT-help.pdf">Manual</a></th>
+        </tr>
+        </table>
+        <br>
+        
+        <h6> <a href="http://cran.r-project.org/web/packages/pbdBASE/index.html">pbdBASE</a> </h6>
+        <p>
+        The pbdBASE package is a set of low-level Fortran routines and wrappers
+        for performing distributed matrix computations.  This is intended only for
+        developers; users wishing to elevate their R computations to large distributed
+        platforms should instead look at pbdDEMO and pbdDMAT.
+        </p>
+        <table width=85% class="pretty">
+        <tr>
+        <th><a href=https://github.com/wrathematics/pbdBASE>Code</a></th>   <th><a href="https://raw.github.com/wrathematics/pbdBASE/master/README">Readme</a></th>    <th><a href=https://raw.github.com/wrathematics/pbdBASE/master/ChangeLog>Changelog</a></th>    <th><a href="https://github.com/wrathematics/pbdBASE/raw/master/inst/doc/pbdBASE-guide.pdf">User Guide</a></th>    <th><a href="https://github.com/wrathematics/pbdBASE/raw/master/man/pbdBASE-help.pdf">Manual</a></th>
+        </tr>
+        </table>
+        
+    </section>
+    <section data-id=install>
+      <p>
+      All of my distributed computing projects require an installation of an MPI
+      library.
+      
+      More soon...
+      </p>
+    </section>
+    <section data-id=bugs>
+      <p>
+      Before submitting a bug report, please consider offering a minimal example script
+      demonstrating the bug, as well as the output that you receive when running
+      this script.  This drastically helps in reducing the turnaround time to
+      a solution.
+      <br><br>
+      You can submit a bug report several ways.  In descending order of preference:
+      </p>
+      <ol>
+        <li>Use the github issue tracker: 
+        <table width=55% class="pretty">
+          <tr>
+          <th><a href="https://github.com/wrathematics/pbdDEMO/issues">pbdDEMO</a></th>  <th><a href="https://github.com/wrathematics/pbdDMAT/issues">pbdDMAT</a></th>  <th><a href="https://github.com/wrathematics/pbdBASE/issues">pbdBASE</a></th>
+          </tr>
+          </table>
+        </li>
+        <li>Contact us at our discussion group:  <a href="http://group.r-pbd.org/">http://group.r-pbd.org/</a></li>
+        <li>Directly email me:  schmidt .AT. math .DOT. utk .DOT. edu
+      </ol>
+      <hr>
+    </section>
+  </body>
+</html>
