@@ -240,6 +240,28 @@ table.pretty caption {
       </div></div>
     </nav>
     <section data-id=projects>
+    <h2> <a href="https://github.com/wrathematics/memuse">MemUse</a> </h2>
+    <p>
+    The MemUse package is an intentionally over-engineered R package for
+    determining the memory usage of dense, in-core objects.  So for example,
+    say you have an mxn matrix of numeric (double precision) values.  This
+    should use roughly m*n*8 bytes of memory (with a little overhead for 
+    R's additional information stored in the structs; this overhead is 
+    effectively 0 for large m*n).  Now imagine taking this idea and turning
+    it into several thousand lines of R code full of completely unnecessary
+    OOP and you get the MemUse package.
+    </p>
+            <table width=85% class="pretty">
+        <tr>
+        <th><a href=https://github.com/wrathematics/memuse>Code</a></th>   
+        <th><a href="https://raw.github.com/wrathematics/memuse/master/README">Readme</a></th>    
+        <th><a href=https://raw.github.com/wrathematics/memuse/master/ChangeLog>Changelog</a></th>    
+        <th><a href="https://github.com/wrathematics/memuse/raw/master/inst/doc/memuse-guide.pdf">User Guide</a></th>    
+        <th><a href="https://github.com/wrathematics/memuse/raw/master/man/memuse-help.pdf">Manual</a></th>
+        </tr>
+        </table>
+    <br>
+    
     <h2> <a href="http://r-pbd.org">pbdR</a> </h2>
       <p> 
       The "Programming with Big Data in R" (pbdR) project seeks to elevate  
