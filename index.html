@@ -243,13 +243,23 @@ table.pretty caption {
     <h2> <a href="https://github.com/wrathematics/memuse">MemUse</a> </h2>
     <p>
     The MemUse package is an intentionally over-engineered R package for
-    determining the memory usage of dense, in-core objects.  So for example,
+    determining the memory usage of non-allocated, dense, in-core objects.  So for example,
     say you have an mxn matrix of numeric (double precision) values.  This
     should use roughly m*n*8 bytes of memory (with a little overhead for 
     R's additional information stored in the structs; this overhead is 
     effectively 0 for large m*n).  Now imagine taking this idea and turning
     it into several thousand lines of R code full of completely unnecessary
     OOP and you get the MemUse package.
+    <br><br>
+    The package is meant as somewhat of a love letter to other needlessly
+    complex applications, like the
+    <a href="https://github.com/Mikkeren/FizzBuzzEnterpriseEdition">Enterprise Fizzbuzz</a>.
+    But it is also born out of the need for having a "conveniently printed" 
+    memory usage, meaning in the "best" digits without needing to think about
+    powers of 1024 (or 1000).
+    <br><br>
+    The code is 100% written in R, and so it should install easily and be
+    exactly as portable as R itself.
     </p>
             <table width=85% class="pretty">
         <tr>
