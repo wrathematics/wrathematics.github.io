@@ -337,64 +337,102 @@ table.pretty caption {
         
     </section>
     <section data-id=install>
+      <h2> <a href="http://github.com/wrathematics/memuse">MemUse</a> </h2>
       <p>
-      All of my distributed computing projects require an installation of an MPI
-      library.
+      The MemUse package is 100% R code, and so it should install simply, 
+      assuming that you have R installed.  Perhaps the easiest way to install
+      the package is with the <a href="http://cran.r-project.org/web/packages/devtools/index.html">devtools</a>
+      package, which will let you install directly from github just as you would
+      install from the CRAN.  To do this, simply enter:
+      </p>
+<pre>
+library(devtools)
+install_github(repo="memuse", username="wrathematics")
+</pre>
+      <p>
+      into an R prompt.  But if for whatever reason you refuse to install the devtools package,
+      you can also grab the source for MemUse <a href="https://github.com/wrathematics/memuse/archive/master.zip">from here</a>
+      then unzip this file and execute:
+      </p>
+<pre>
+R CMD INSTALL memuse-master
+</pre>
+      <p>
+      from your shell.
+      </p>
+      
+      
       <br><br>
       <h2> <a href="http://r-pbd.org">pbdR</a> </h2>
       Below are sets of pbdR installation instructions for each major OS platform (or all three).
       These instructions include information for installing MPI and R in addition to 
       installing the pbdR packages.
-      <br><br>
+      <br><br>  
       <center>
-      <p><b>pbdR Installation Instructions</b></p>
-      <table width=60% class="pretty">
-      <tr>
-        <th><p style="color:DarkOrchid">Without Screenshots</p></th>
-        <th>Linux & FreeBSD</th> 
-        <th>Mac</th> 
-        <th>Windows</th> 
-        <th>All OS's</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_linux.pdf">pdf</a></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_mac.pdf">pdf</a></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_windows.pdf">pdf</a></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_all.pdf">pdf</a></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_linux.html">html</a></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_mac.html">html</a></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_windows.html">html</a></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_all.html">html</a></td>
-      </tr>
-      <tr>
-        <th><p style="color:DarkOrchid">With Screenshots</p></th>
-        <th>Linux & FreeBSD</th> 
-        <th>Mac</th> 
-        <th>Windows</th> 
-        <th>All OS's</th>
-      </tr>
-      <tr> 
-        <td></td>
-        <td width=25%></td>
-<!--        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_linux.pdf">pdf</a></td>-->
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_mac.pdf">pdf</a></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_windows.pdf">pdf</a></td>
-        <td width=25%><a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_all.pdf">pdf</a></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td width=25%></td>
-<!--        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_linux.html">html</a></td>-->
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_mac.html">html</a></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_windows.html">html</a></td>
-        <td width=25%><a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_all.html">html</a></td>
-      </tr>
-      </table>
-      </center>
+(html files are experimental at this time)
+<table width=95% >
+<tr valign="center" align="center">
+  <th>Screenshots</th>
+  <th>All OS's</th>
+  <th>Linux</th> 
+  <th>Mac</th> 
+  <th>Windows</th> 
+</tr>
+<tr valign="center" align="center">
+  <td>Without</td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_all.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_all.html" target="_blank">html</a>
+  </td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_linux.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_linux.html" target="_blank">html</a>
+  </td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_mac.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_mac.html" target="_blank">html</a>
+  </td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/without_screenshots/pdf/installation_windows.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_windows.html" target="_blank">html</a>
+  </td>
+</tr>
+
+<tr valign="center" align="center">
+  <td>With</td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_all.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_all.html" target="_blank">html</a>
+  </td>
+  <td width=25%>
+    NA
+  </td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_mac.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/with_screenshots/html/index_mac.html" target="_blank">html</a>
+  </td>
+  <td width=25%>
+    <a href="https://github.com/wrathematics/installation-instructions/raw/master/output/with_screenshots/pdf/installation_windows.pdf">pdf</a>
+    |
+    <a href="http://htmlpreview.github.io/?https://raw.github.com/wrathematics/installation-instructions/master/output/without_screenshots/html/index_windows.html" target="_blank">html</a>
+  </td>
+</tr>
+
+</table>
+</center>
+
+      
+      
+      
+      
+      
+      
       </p>
     </section>
     <section data-id=bugs>
