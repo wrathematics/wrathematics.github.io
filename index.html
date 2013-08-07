@@ -236,20 +236,19 @@ table.pretty caption {
         <a href=#projects>Projects</a>
         <a href=#install>Installation</a>
         <a href=#bugs>Bugs</a>
-        <a href="https://twitter.com/wrathematics">@wrathematics</a>
       </div></div>
     </nav>
     <section data-id=projects>
-    <h2> <a href="https://github.com/wrathematics/memuse">MemUse</a> </h2>
+    <h2> <a href="https://github.com/wrathematics/memuse">memuse</a> </h2>
     <p>
-    The MemUse package is an intentionally over-engineered R package for
+    The memuse package is an intentionally over-engineered R package for
     determining the memory usage of non-allocated, dense, in-core objects.  So for example,
     say you have an mxn matrix of numeric (double precision) values.  This
     should use roughly m*n*8 bytes of memory (with a little overhead for 
     R's additional information stored in the structs; this overhead is 
     effectively 0 for large m*n).  Now imagine taking this idea and turning
     it into several thousand lines of R code full of completely unnecessary
-    OOP and you get the MemUse package.
+    OOP and you get the memuse package.
     <br><br>
     The package is meant as somewhat of a love letter to other needlessly
     complex applications, like the
@@ -339,9 +338,9 @@ table.pretty caption {
         
     </section>
     <section data-id=install>
-      <h2> <a href="http://github.com/wrathematics/memuse">MemUse</a> </h2>
+      <h2> <a href="http://github.com/wrathematics/memuse">memuse</a> </h2>
       <p>
-      The MemUse package is 100% R code, and so it should install simply, 
+      The memuse package is 100% R code, and so it should install simply, 
       assuming that you have R installed.  Perhaps the easiest way to install
       the package is with the <a href="http://cran.r-project.org/web/packages/devtools/index.html">devtools</a>
       package, which will let you install directly from github just as you would
@@ -353,7 +352,7 @@ install_github(repo="memuse", username="wrathematics")
 </pre>
       <p>
       into an R prompt.  But if for whatever reason you refuse to install the devtools package,
-      you can also grab the source for MemUse <a href="https://github.com/wrathematics/memuse/archive/master.zip">from here</a>
+      you can also grab the source for memuse <a href="https://github.com/wrathematics/memuse/archive/master.zip">from here</a>
       then unzip this file and execute:
       </p>
 <pre>
