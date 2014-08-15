@@ -1,64 +1,75 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta charset='utf-8' />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-  <meta name="description" content="wrathematics.github.io : Scalable Statistics Software" />
-  
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/header.css">
-  
-  <title>wrathematics</title>
-  <h1>Scalable Statistics Software</h1>
-  
-  <script>
-    (function(){
-      var d = document;
-      function $(s){return d.querySelector(s, d.body)}
-      function id(i){return $('[data-id='+i+']')}
-      function a(i){return $('[href="#'+i+'"]')}
-      window.addEventListener('hashchange', function(e) {
-        var next = e.newURL.match(/#(.*)$/)[1];
-        if(id(next)) {
-          $('.active').className = null;
-          $('.on').className = null;
-          id(next).className = 'active';
-          a(next).className = 'on';
-        }
-      }, false);
-      var d = document;
-      d.addEventListener('DOMContentLoaded', function loaded() {
-        var hash, el;
-        d.removeEventListener('DOMContentLoaded', loaded, false);
-        hash = window.location.hash.slice(1) || 'about';
-        el = id(hash) || id('about');
-        el.className = 'active';
-        a(el.dataset.id).className = 'on';
-      }, false);
-    })();
-  </script>
+<title>Simple Personal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
 </head>
-
-
-
 <body>
-  <nav>
-    <div><div>
-      <a href=#about>About</a>
-      <a href=#portfolio>Portfolio</a>
-      <a href=#contact>Contact</a>
-    </div></div>
-  </nav>
-  <section data-id=about>
-    <object width="675" height="500" type="text/html" data="about.html" border="1" ></object>
-  </section>
-  <section data-id=portfolio>
-    <object width="675" height="500" type="text/html" data="portfolio.html" border="1" ></object>
-  </section>
-  <section data-id=contact>
-    <object width="675" height="500" type="text/html" data="contact.html" border="1" ></object>
-  </section>
-</body>
-
+<div id="wrapper">
+  <div class="title">
+    <div class="title-top">
+      <div class="title-left">
+        <div class="title-right">
+          <div class="title-bottom">
+            <div class="title-top-left">
+              <div class="title-bottom-left">
+                <div class="title-top-right">
+                  <div class="title-bottom-right">
+                    <h1><span>Drew Schmidt</span></h1>
+                    <p>Data Scientist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="noscreen" />
+  <div class="content">
+    <div class="column-left">
+      <a href="#skip-menu" class="hidden">Skip menu</a>
+      <ul class="menu">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="last"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="skip-menu"></div>
+    <div class="column-right">
+      <div class="box">
+        <div class="box-top"></div>
+        <div class="box-in">
+          <!-------------------------- -------------------------->
+          <h1>About</h1>
+          <p>
+          I am an open source software developer largely interested in the 
+          intersection of mathematics, statistics, and high performance
+          computing.
+          </p>
+          
+          <p>
+          My formal background is mathematics, with some sprinkling of
+          statistics.  But these days I mostly look like a computer scientist.
+          I know a great deal about the inner cobwebs of the R language, and 
+          mostly spend my time linking it to high performance C and Fortran code.
+          </p>
+          
+          <p>
+          Currently, I am founding member and co-lead developer of the 
+          <a href="http://r-pbd.org">pbdR project</a>, 
+          which elevates the R programming language to supercomputers.
+          </p>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <hr class="noscreen" />
+      </div>
+    </div>
+    <div class="cleaner">&nbsp;</div>
+  </div>
+</div>
 </html>
