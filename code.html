@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Drew Schmidt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Drew Schmidt</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="code.html">Code</a>
+            </li>
+            <li>
+              <a href="presentations.html">Presentations</a>
+            </li>
+            <li>
+              <a href="publications.html">Publications</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+         <!-------------------------- -------------------------->
+         
+<br><br><br><br>
+
+<div class="row">
+  <div class="span5">
+    <div class="well">
+      <h3>R Packages</h3>
+    </div>
+  </div>
+
+  <h4>Programming with Big Data in R (pbdR)</h4>
+  <dl class="dl-horizontal">
+    
+    
+    <dd></dd>
+    
+    <dt><a href="https://github.com/wrathematics/pbdPAPI">pbdPAPI</a></dt>
+    <dd> 
+      <p>
+      The most advanced profiling suite available for R. Measures flops,
+      cache misses, cpu utilization, and much more.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/pbdDEMO">pbdDEMO</a></dt>
+    <dd> 
+      <p>
+      Over 30 demonstrations and examples of high-performance computing 
+      with R and pbdR.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/pbdDMAT">pbdDMAT</a></dt>
+    <dd> 
+      <p>
+      High-level programming methods for large scale, distributed 
+      programming in R.  Includes numerous linear algebra and statistics
+      methods for distributed matrices.  Benchmarked to 50,000 cores, but
+      can achieve speedups on smaller servers and workstations.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/pbdBASE">pbdBASE</a></dt>
+    <dd> 
+      <p>
+      Interface to ScaLAPACK distributed linear algebra routines plus
+      hundreds of helper routines; uesd by pbdDMAT.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/RBigData/pbdPROF">pbdPROF</a></dt>
+    <dd> 
+      <p>
+      A package that greatly simplifies the use of MPI profilers with R.
+      In addition to easing the burden of building and linking select
+      MPI profilers, the package provides utilities for parsing, analyzing,
+      and plotting profiler outputs.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/RBigData/pbdMPI">pbdMPI</a></dt>
+    <dd> 
+      <p>
+      Efficient, simplified interface to MPI for R.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/pbdinline">pbdinline</a></dt>
+    <dd> 
+      <p>
+      An R package to emulate interactivity with (batch) pbdR.
+      </p>
+    </dd>
+    
+  </dl>
+  <br>
+  <h4>Utilities</h4></dt>
+  <dl class="dl-horizontal">
+    
+    <dt><a href="https://github.com/wrathematics/memuse">memuse</a></dt>
+    <dd> 
+      <p>
+      A package for benchmarkers.  Estimates the memory usage of matrices
+      and other objects.  Contains numerous other convenience utilities,
+      including those for gathering hardware RAM, swap, and cache
+      information.
+      </p>
+    </dd>
+    
+    
+    <dt><a href="https://github.com/Rth-org">Rth</a></dt>
+    <dd> 
+      <p>
+      Multicore programming in R through thrust
+      </p>
+    </dd>
+    
+    
+    <dt><a href="https://github.com/wrathematics/RNACI">RNACI</a></dt>
+    <dd>
+      <p>
+      A collection of utilities that make dealing with R's native C
+      interface more manageable.  Notably the package handles
+      simplified SEXP allocation (with automatic gc counting), and 
+      the creation and management of lists and dataframes.
+      For instance, by making use of C99's va_args, we can create 
+      arbitrary lists of named objects in just 2 simple function calls.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/yalda">yalda</a></dt>
+    <dd>
+      <p>
+      "Yet Another LDA" package.  Wraps the serial portion of the Google
+      plda program for use with R.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/cpuid">cpuid</a></dt>
+    <dd>
+      <p>
+      R package that gives some basic cpu information (clock speed, 
+      number of cores, etc.).
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/rgutenberg">rgutenberg</a></dt>
+    <dd>
+      <p>
+      A resource for those who need quick access to some sample text
+      corpora.  Just as R's rnorm() can be used to generate
+      "fake" numerical data, the rgutenverg package's 
+      rgutenberg() samples a random book from Project
+      Gutenberg.  The package also includes numerous texts as easily
+      accessed, already preprocessed datasets.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/f2cp">f2cp</a></dt>
+    <dd>
+      <p>
+      A set of parsers to scan Fortran source files and generate 
+      C prototypes.  
+      </p>
+    </dd>
+    
+    
+  </dl>
+  <br>
+  <h4>Just for Fun</h4></dt>
+  <dl class="dl-horizontal">
+    
+    <dt><a href="https://github.com/wrathematics/Rfiglet">Rfiglet</a></dt>
+    <dd> 
+      <p>
+      R bindings for figlet.  Creates ascii logos.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/xkcdpw">xkcdpw</a></dt>
+    <dd> 
+      <p>
+      A package for making portmanteau-style passwords, as in 
+      <a href="https://xkcd.com/936/">this famous XKCD comic</a>.
+      Words are taken from scrapings of random Wikipedia pages.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/tfca">tfca</a></dt>
+    <dd> 
+      <p>
+      Some methods for computing transfinite cardinal arithmetic.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/gmhelper">gmhelper</a></dt>
+    <dd> 
+      <p>
+      A collection of utilities for game masters of fantasy-based
+      role playing games, with a GUI and everything!
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/idgaf">idgaf</a></dt>
+    <dd> 
+      <p>
+      All public GitHub commits containing the word "fuck" in the commit
+      message, from 3/11/2012 to 7/24/2014.
+      </p>
+    </dd>
+    
+    
+    
+    <br><br>
+    <div class="span5">
+      <div class="well">
+        <h3>Libraries</h3>
+      </div>
+    </div>
+  
+    <dt><a href="https://github.com/wrathematics/memuse/tree/master/src/meminfo">meminfo</a></dt>
+    <dd> 
+      <p>
+      A fully cross-platform C library for accessing basic hardware
+      information, such as total RAM, free RAM, total swap, etc.  
+      Additionally, can get cache sizes and cache line sizes.
+      Supports Linux, Windows, Mac OS X, and FreeBSD.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/ngram/tree/master/src/ngram">ngram</a></dt>
+    <dd> 
+      <p>
+      A C library for reading, processing, and "babbling" n-gram models.
+      Used in the ngram R package.
+      </p>
+    </dd>
+
+    
+   </dl>
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+

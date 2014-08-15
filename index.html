@@ -1,52 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>Simple Personal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
-<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
-</head>
-<body>
-<div id="wrapper">
-  <div class="title">
-    <div class="title-top">
-      <div class="title-left">
-        <div class="title-right">
-          <div class="title-bottom">
-            <div class="title-top-left">
-              <div class="title-bottom-left">
-                <div class="title-top-right">
-                  <div class="title-bottom-right">
-                    <h1><span>Drew Schmidt</span></h1>
-                    <p>Data Scientist</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Drew Schmidt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Drew Schmidt</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="code.html">Code</a>
+            </li>
+            <li>
+              <a href="presentations.html">Presentations</a>
+            </li>
+            <li>
+              <a href="publications.html">Publications</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
-  </div>
-  <hr class="noscreen" />
-  <div class="content">
-    <div class="column-left">
-      <a href="#skip-menu" class="hidden">Skip menu</a>
-      <ul class="menu">
-        <li><a href="index.html" class="active">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li class="last"><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div id="skip-menu"></div>
-    <div class="column-right">
-      <div class="box">
-        <div class="box-top"></div>
-        <div class="box-in">
-          <!-------------------------- -------------------------->
+
+
+    <div class="container">
+
+         <!-------------------------- -------------------------->
           <h1>About</h1>
           <p>
-          I am an open source software developer largely interested in the 
+          I am an open source software developer interested in the 
           intersection of mathematics, statistics, and high performance
           computing.
           </p>
@@ -63,13 +80,29 @@
           <a href="http://r-pbd.org">pbdR project</a>, 
           which elevates the R programming language to supercomputers.
           </p>
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+
+          </div>
         </div>
-      </div>
-      <div class="box-bottom">
-        <hr class="noscreen" />
-      </div>
+
+      </footer>
+
+
     </div>
-    <div class="cleaner">&nbsp;</div>
-  </div>
-</div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
+
+
