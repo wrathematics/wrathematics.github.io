@@ -127,17 +127,14 @@
   </dl>
 
 
-  <br>
-  <h4>Other HPC Packages</h4>
-  <dl class="dl-horizontal">
 
-    <dt><a href="https://github.com/wrathematics/RTop500">RTop500</a></dt>
-    <dd>
-      <p>
-      A package containing the Top 500 supercomputer data, as well
-      as some utilities for plot generation.
-      </p>
-    </dd>
+  <h4>System Hardware Info for R and Analytics (SHINRA)</h4>
+  <dl class="dl-horizontal">
+    <p>
+    For more information about SHINRA, see
+    <a href="https://shinra-dev.github.io/">https://shinra-dev.github.io/</a>
+
+    <dd></dd>
 
     <dt><a href="https://github.com/wrathematics/memuse">memuse</a></dt>
     <dd>
@@ -149,11 +146,60 @@
       </p>
     </dd>
 
+    <dt><a href="https://github.com/wrathematics/merkhet">merkhet</a></dt>
+    <dd>
+      <p>
+      Contains utilities for times, including queries for system
+      and process uptimes, as well as a post-hoc system.time().
+      </p>
+    </dd>
+
     <dt><a href="https://github.com/wrathematics/okcpuid">okcpuid</a></dt>
     <dd>
       <p>
       R package that gives some basic cpu information (clock speed,
       number of cores, etc.).
+      Also includes a custom LINPACK-like benchmarker.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/scribe">scribe</a></dt>
+    <dd>
+      <p>
+      A set of enhancements and visualizations for the hardware
+      counter profiler pbdPAPI.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/stressR">stressR</a></dt>
+    <dd>
+      <p>
+       is a suite of tools for stressing hardware, including cpu, memory, and disk.
+      </p>
+    </dd>
+
+
+
+
+  <br>
+  <h4>Other HPC Packages</h4>
+  <dl class="dl-horizontal">
+
+    <dt><a href="https://github.com/wrathematics/pcapack">pcapack</a></dt>
+    <dd>
+      <p>
+      An experimental package for computing principal components
+      and related statistical quantities.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/linmod">linmod</a></dt>
+    <dd>
+      <p>
+      An experimental rewrite of R's lm.fit() and glm.fit() functions.
+      Like R's implementation, it uses the "limited pivoting" strategy
+      in a rank-revealing QR; unlike R, we use level 3 BLAS (and
+      generally better memory management) when we can.
       </p>
     </dd>
 
@@ -175,9 +221,28 @@
     </dd>
 
 
+
   <br>
   <h4>Utilities</h4></dt>
   <dl class="dl-horizontal">
+
+    <dt><a href="https://github.com/wrathematics/dequer">dequer</a></dt>
+    <dd>
+      <p>
+      A package offering a custom data structure for R.  A deque
+      is like a list, but with very cheap insertions (since R lists
+      are contiguous arrays of pointers).
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/lineSampler">lineSampler</a></dt>
+    <dd>
+      <p>
+      Samples a file by line; quickly read a subsample of observations
+      from a large flat text file (e.g., a csv).  Useful for
+      downsampling; not suitable for resampling.
+      </p>
+    </dd>
 
     <dt><a href="https://github.com/wrathematics/RNACI">RNACI</a></dt>
     <dd>
@@ -230,6 +295,14 @@
       <p>
       A "did you mean?" tool for R to help catch spelling mistakes in an
       interactive R session.
+      </p>
+    </dd>
+
+    <dt><a href="https://github.com/wrathematics/RTop500">RTop500</a></dt>
+    <dd>
+      <p>
+      A package containing the Top 500 supercomputer data, as well
+      as some utilities for plot generation.
       </p>
     </dd>
 
