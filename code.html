@@ -1,469 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Drew Schmidt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.html" class="navbar-brand">Drew Schmidt</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="code.html">Code</a></li>
-            <li><a href="presentations.html">Presentations</a></li>
-            <li><a href="publications.html">Publications</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://librestats.com">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+  <meta name="author" content="wrathematics" />
+  <meta name="robots"	content="all" />
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <meta name="description" content="Drew Schmidt" />
+  <meta name="keywords" content="pbdR,R,Big Data,Statistical Computing,Parallel Computing" />
+  
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="wrathematics.info : " />
+  
+  <title>Drew Schmidt</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="ui/css/custom.css" media="screen">
+</head>
 
+<body>
 
-    <div class="container">
-
-         <!-------------------------- -------------------------->
-
-<br><br><br><br>
-
-<div class="row">
-  <div class="span5">
-    <div class="well">
-      <h3>R Packages</h3>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">Drew Schmidt</a>
     </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="code.html">Code</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://librestats.com">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
+</nav>
 
-  <h4>Programming with Big Data in R (pbdR)</h4>
-  <dl class="dl-horizontal">
-    <p>
-    For more information about the pbdR project, see
-    <a href="http://r-pbd.org/">http://r-pbd.org/</a>
-
-    <dd></dd>
-
-    <dt><a href="https://github.com/wrathematics/pbdPAPI">pbdPAPI</a></dt>
-    <dd>
-      <p>
-      The most advanced profiling suite available for R. Measures flops,
-      cache misses, cpu utilization, and much more.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/RBigData/pbdPROF">pbdPROF</a></dt>
-    <dd>
-      <p>
-      A package that greatly simplifies the use of MPI profilers with R.
-      In addition to easing the burden of building and linking select
-      MPI profilers, the package provides utilities for parsing, analyzing,
-      and plotting profiler outputs.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/pbdDEMO">pbdDEMO</a></dt>
-    <dd>
-      <p>
-      Over 30 demonstrations and examples of high-performance computing
-      with R and pbdR.  Also includes a 130+ page, textbook-style
-      vignette that helps transition desktop R users into being
-      able to leverage multi-node compute resources.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/pbdDMAT">pbdDMAT</a></dt>
-    <dd>
-      <p>
-      High-level programming methods for large scale, distributed
-      programming in R.  Includes numerous linear algebra and statistics
-      methods for distributed matrices.  Benchmarked to 50,000 cores, but
-      can achieve speedups on smaller servers and workstations.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/pbdBASE">pbdBASE</a></dt>
-    <dd>
-      <p>
-      Interface to ScaLAPACK distributed linear algebra routines plus
-      hundreds of helper routines; uesd by pbdDMAT.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/RBigData/pbdMPI">pbdMPI</a></dt>
-    <dd>
-      <p>
-      Efficient, simplified interface to MPI for R.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/pbdinline">pbdinline</a></dt>
-    <dd>
-      <p>
-      An R package to emulate interactivity with (batch) pbdR.
-      </p>
-    </dd>
-
-  </dl>
-
-
-
-  <h4>System Hardware Info for R and Analytics (SHINRA)</h4>
-  <dl class="dl-horizontal">
-    <p>
-    For more information about SHINRA, see
-    <a href="https://shinra-dev.github.io/">https://shinra-dev.github.io/</a>
-
-    <dd></dd>
-
-    <dt><a href="https://github.com/wrathematics/memuse">memuse</a></dt>
-    <dd>
-      <p>
-      A package for benchmarkers.  Estimates the memory usage of matrices
-      and other objects.  Contains numerous other convenience utilities,
-      including those for gathering hardware RAM, swap, and cache
-      information.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/merkhet">merkhet</a></dt>
-    <dd>
-      <p>
-      Contains utilities for times, including queries for system
-      and process uptimes, as well as a post-hoc system.time().
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/okcpuid">okcpuid</a></dt>
-    <dd>
-      <p>
-      R package that gives some basic cpu information (clock speed,
-      number of cores, etc.).
-      Also includes a custom LINPACK-like benchmarker.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/scribe">scribe</a></dt>
-    <dd>
-      <p>
-      A set of enhancements and visualizations for the hardware
-      counter profiler pbdPAPI.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/stressR">stressR</a></dt>
-    <dd>
-      <p>
-       is a suite of tools for stressing hardware, including cpu, memory, and disk.
-      </p>
-    </dd>
-
-
-
-
-  <br>
-  <h4>Other HPC Packages</h4>
-  <dl class="dl-horizontal">
-
-    <dt><a href="https://github.com/wrathematics/pcapack">pcapack</a></dt>
-    <dd>
-      <p>
-      An experimental package for computing principal components
-      and related statistical quantities.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/linmod">linmod</a></dt>
-    <dd>
-      <p>
-      An experimental rewrite of R's lm.fit() and glm.fit() functions.
-      Like R's implementation, it uses the "limited pivoting" strategy
-      in a rank-revealing QR; unlike R, we use level 3 BLAS (and
-      generally better memory management) when we can.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/Rth-org">Rth</a></dt>
-    <dd>
-      <p>
-      Multicore programming in R through the thrust template library.
-      Compiles to an OpenMP, Intel Thread Buildingblocks, or CUDA
-      backend.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/nmatzke/rexpokit">rexpokit</a></dt>
-    <dd>
-      <p>
-      A set of bindings and utility functions for computing matrix exponentials
-      via the Fortran 77 package EXPOKIT.
-      </p>
-    </dd>
-
-
-
-  <br>
-  <h4>Utilities</h4></dt>
-  <dl class="dl-horizontal">
-
-    <dt><a href="https://github.com/wrathematics/dequer">dequer</a></dt>
-    <dd>
-      <p>
-      A package offering a custom data structure for R.  A deque
-      is like a list, but with very cheap insertions (since R lists
-      are contiguous arrays of pointers).
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/lineSampler">lineSampler</a></dt>
-    <dd>
-      <p>
-      Samples a file by line; quickly read a subsample of observations
-      from a large flat text file (e.g., a csv).  Useful for
-      downsampling; not suitable for resampling.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/RNACI">RNACI</a></dt>
-    <dd>
-      <p>
-      A collection of utilities that make dealing with R's native C
-      interface more manageable.  Notably the package handles
-      simplified SEXP allocation (with automatic gc counting), and
-      the creation and management of lists and dataframes.
-      For instance, by making use of C99's va_args, we can create
-      arbitrary lists of named objects in just 2 simple function calls.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/yalda">yalda</a></dt>
-    <dd>
-      <p>
-      "Yet Another LDA" package.  Wraps the serial portion of the Google
-      plda program for use with R.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/rgutenberg">rgutenberg</a></dt>
-    <dd>
-      <p>
-      A resource for those who need quick access to some sample text
-      corpora.  Just as R's rnorm() can be used to generate
-      "fake" numerical data, the rgutenverg package's
-      rgutenberg() samples a random book from Project
-      Gutenberg.  The package also includes numerous texts as easily
-      accessed, already preprocessed datasets.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/f2cp">f2cp</a></dt>
-    <dd>
-      <p>
-      A set of parsers to scan Fortran source files and generate
-      C prototypes.
-      </p>
-    </dd>
-
-
-  </dl>
-  <br>
-  <h4>Just for Fun</h4></dt>
-  <dl class="dl-horizontal">
-
-    <dt><a href="https://github.com/wrathematics/Rdym">Rdym</a></dt>
-    <dd>
-      <p>
-      A "did you mean?" tool for R to help catch spelling mistakes in an
-      interactive R session.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/RTop500">RTop500</a></dt>
-    <dd>
-      <p>
-      A package containing the Top 500 supercomputer data, as well
-      as some utilities for plot generation.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/timeRtypeR">timeRtypeR</a></dt>
-    <dd>
-      <p>
-      A utility that measures your typing speed in an R terminal.
-      Note that it breaks a lot of the nice features of the R
-      terminal (like, say, the ability to backspace).
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/hackR">hackR</a></dt>
-    <dd>
-      <p>
-      An R package for translating text into "leet speak", or for
-      generating a goofy circa 1990's hacker handle.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/Rfiglet">Rfiglet</a></dt>
-    <dd>
-      <p>
-      R bindings for figlet; creates ascii logos.  See also
-      <a href="http://spark.rstudio.com/wrathematics/faas/">Figlet as a Service</a>.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/xkcdpw">xkcdpw</a></dt>
-    <dd>
-      <p>
-      A package for making portmanteau-style passwords, as in
-      <a href="https://xkcd.com/936/">this famous XKCD comic</a>.
-      Words are taken from scrapings of random Wikipedia pages.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/tfca">tfca</a></dt>
-    <dd>
-      <p>
-      Some methods for computing transfinite cardinal arithmetic.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/gmhelper">gmhelper</a></dt>
-    <dd>
-      <p>
-      A collection of utilities for game masters of fantasy-based
-      role playing games, with a GUI and everything!
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/idgaf">idgaf</a></dt>
-    <dd>
-      <p>
-      All public GitHub commits containing the word "fuck" in the commit
-      message, from 3/11/2012 to 7/24/2014.
-      </p>
-    </dd>
-
-
-
-    <br><br>
-    <div class="span5">
-      <div class="well">
-        <h3>Libraries</h3>
-      </div>
-    </div>
-
-    <dt><a href="https://github.com/wrathematics/libexpm">libexpm</a></dt>
-    <dd>
-      <p>
-      High-performance C library for computing the matrix exponential
-      of a dense matrix.
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/memuse/tree/master/src/meminfo">meminfo</a></dt>
-    <dd>
-      <p>
-      A fully cross-platform C library for accessing basic hardware
-      information, such as total RAM, free RAM, total swap, etc.
-      Additionally, can get cache sizes and cache line sizes.
-      Supports Linux, Windows, Mac OS X, and FreeBSD. Used by the
-      R package "memuse".
-      </p>
-    </dd>
-
-    <dt><a href="https://github.com/wrathematics/ngram/tree/master/src/ngram">ngram</a></dt>
-    <dd>
-      <p>
-      A C library for reading, processing, and "babbling" n-gram models.
-      Used in the R package "ngram".
-      </p>
-    </dd>
-
-
-   </dl>
-
-
-
-
-    <br><br>
-    <div class="span5">
-      <div class="well">
-          <h3>Webapps</h3>
-      </div>
-    </div>
-
-    <dt><a href="https://wrathematics.shinyapps.io/hackR/">hackR</a></dt>
-    <dd>
-      <p>
-      An interactive interface to the hackR package.  Now you can
-      hack the gibson without needing to learn R!
-      </p>
-    </dd>
-
-    <dt><a href="https://wrathematics.shinyapps.io/ngram/">ngram</a></dt>
-    <dd>
-      <p>
-      An interactive interface to the ngram package.  Ever wanted to make
-      your very own wacky sentences using markov chains?  Now you can!
-      </p>
-    </dd>
-
-    <dt><a href="https://wrathematics.shinyapps.io/RTop500/">RTop500</a></dt>
-    <dd>
-      <p>
-      A visual summary of the performance over time (by various metrics)
-      of the top 500 supercomputers since 1993.  Written with R and shiny.
-      Source is available in the RTop500 package.
-      </p>
-    </dd>
-
-    <dt><a href="https://wrathematics.shinyapps.io/faas/">Figlet as a Service</a></dt>
-    <dd>
-      <p>
-      A demo of the Rfiglet package.  Written with R and shiny.  Source is
-      available in the Rfiglet package.
-      </p>
-    </dd>
-
-
-   </dl>
-
-
-
-
-
-
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-            </ul>
-
-          </div>
-        </div>
-
-      </footer>
-
-
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+
+<xmp theme="" style="display:none;">
+<br>
+<div class="well">
+  <h3> R Packages </h3>
+</div>
+
+### Programming with Big Data in R (pbdR)
+I am currently the co-lead developer of the pbdR ecosystem of packages.  These
+are a collection of utilities and services for leveraging R in HPC environments.
+For more information, see the main project website http://r-pbd.org/
+
+
+### System Hardware Info for R and Analytics (SHINRA)
+SHINRA is a set of tools for benchmarkers working with R.  For more information
+about SHINRA, see https://shinra-dev.github.io/
+
+
+### Other HPC Packages
+
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| coop | Fast, efficient implementations of the "co-operations" (covariance, correlation, cosine similarity). | [ghbutton](http://github.com/wrathematics/coop)
+| pcapack | An experimental package for computing principal components and related statistical quantities in a high performance manner. | [ghbutton](http://github.com/wrathematics/pcapack)
+| linmod | An experimental rewrite of R's lm.fit() and glm.fit() functions. Like R's implementation, it uses the "limited pivoting" strategy in a rank-revealing QR; unlike R, we use level 3 BLAS (and generally better memory management) when we can. | [ghbutton](http://github.com/wrathematics/linmod)
+| Rth | Multicore programming in R through the thrust template library. Compiles to an OpenMP, Intel Thread Buildingblocks, or CUDA backend. | [ghbutton](http://github.com/Rth-org/Rth)
+| rexpokit | A set of bindings and utility functions for computing matrix exponentials via the Fortran 77 package EXPOKIT. | [ghbutton](http://github.com/wrathematics/rexpokit)
+
+### Utilities
+
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| dequer | A package offering a custom data structure for R.  A deque is like a list, but with very cheap insertions (since R lists are contiguous arrays of pointers). | [ghbutton](http://github.com/wrathematics/dequer) <br> [cranbutton](http://cran.r-project.org/package=dequer)
+| lineSampler | Samples a file by line; quickly read a subsample of observations from a large flat text file (e.g., a csv).  Useful for downsampling; not suitable for resampling. | [ghbutton](http://github.com/wrathematics/lineSampler)
+| RNACI | A collection of utilities that make dealing with R's native C interface more manageable.  Notably the package handles simplified SEXP allocation (with automatic gc counting), and the creation and management of lists and dataframes. For instance, by making use of C99's va_args, we can create arbitrary lists of named objects in just 2 simple function calls. | [ghbutton](http://github.com/wrathematics/RNACI)
+| yalda | "Yet Another LDA" package.  Wraps the serial portion of the Google plda program for use with R. | [ghbutton](http://github.com/wrathematics/yalda)
+
+### Just for Fun
+
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| Rdym | A "did you mean?" tool for R to help catch spelling mistakes in an interactive R session. | [ghbutton](http://github.com/wrathematics/Rdym)
+| RTop500 | A package containing the Top 500 supercomputer data, as well as some utilities for plot generation. | [ghbutton](http://github.com/wrathematics/RTop500)
+| hackR | An R package for translating text into "leet speak", or for generating a goofy circa 1990's hacker handle. | [ghbutton](http://github.com/wrathematics/hackR)
+| Rfiglet | R bindings for figlet; creates ascii logos. | [ghbutton](http://github.com/wrathematics/Rfiglet)
+| xkcdpw | A package for making portmanteau-style passwords, as in [this famous XKCD comic](https://xkcd.com/936/). Words are taken from scrapings of random Wikipedia pages. | [ghbutton](http://github.com/wrathematics/xkcdpw)
+| tfca | Some methods for computing transfinite cardinal arithmetic. | [ghbutton](http://github.com/wrathematics/tfca)
+| gmhelper | A collection of utilities for game masters of fantasy-based role playing games, with a GUI and everything! | [ghbutton](http://github.com/wrathematics/gmhelper)
+| idgaf | All public GitHub commits containing the "F-word" in the commit message, from 3/11/2012 to 7/24/2014. (warning: profanity) | [ghbutton](http://github.com/wrathematics/idgaf)
+
+
+
+<br><br>
+<div class="well">
+  <h3> Libraries </h3>
+</div>
+
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| libexpm | High-performance C library for computing the matrix exponential of a dense matrix. | [ghbutton](http://github.com/wrathematics/libexpm)
+| meminfo | A fully cross-platform C library for accessing basic hardware information, such as total RAM, free RAM, total swap, etc. Additionally, can get cache sizes and cache line sizes. Supports Linux, Windows, Mac OS X, and FreeBSD. Used by the R package "memuse". | [ghbutton](https://github.com/wrathematics/memuse/tree/master/src/meminfo)
+| ngram | A C library for reading, processing, and "babbling" n-gram models. Used in the R package "ngram". | [ghbutton](https://github.com/wrathematics/ngram/tree/master/src/ngram)
+
+
+
+<br><br>
+<div class="well">
+  <h3> Webapps </h3>
+</div>
+
+### Large Projects
+
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| TAG |  | [ghbutton](http://github.com/wrathematics/)
+| gmhelper |  | [ghbutton](http://github.com/wrathematics/)
+
+
+### Micro Projects
+| Package | Description  | Download |
+|---------|------------- | :------: |
+| hackR | An interactive interface to the hackR package.  Now you can hack the gibson without needing to learn R! | [ghbutton](https://wrathematics.shinyapps.io/hackR/)
+| ngram | An interactive interface to the ngram package.  Ever wanted to make your very own wacky sentences using markov chains?  Now you can! | [ghbutton](https://wrathematics.shinyapps.io/ngram/)
+| RTop500 | A visual summary of the performance over time (by various metrics) of the top 500 supercomputers since 1993.  Written with R and shiny. Source is available in the RTop500 package. | [ghbutton](https://wrathematics.shinyapps.io/RTop500/)
+| Figlet as a Service | A demo of the Rfiglet package.  Written with R and shiny.  Source is available in the Rfiglet package. | [ghbutton](https://wrathematics.shinyapps.io/faas/)
+
+</xmp>
+
+<script src="ui/strapdown/strapdown.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="ui/js/bootstrap.min.js"></script>
+<script src="./ui/js/buttons.js"></script>
 </html>
-
-
 
