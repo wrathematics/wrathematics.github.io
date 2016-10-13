@@ -1,0 +1,60 @@
+table {
+  width: 100%;
+  font-size: 1em;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  background-color: #d3dce3;
+  color: black;
+}
+
+table, th, td {
+   border: 1px solid gray;
+}
+
+tr:nth-child(even) {
+  background-color: #2e5189
+}
+
+
+
+tt, code, pre {
+  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+  font-size:2.2em;
+  border-bottom: 1px solid #ccc;
+  margin-top: 5ex;
+  padding-top: 20px;
+}
+
+h1:first-child { margin-top: 0px;padding-top: 0px; }
+h1.title { margin-top: 0px; }
+
+h2 {
+  font-size:1.8em;
+  margin-top:10px;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size:1.4em;
+}
+
+h4 {
+  font-size:1.0em;
+}
+
+h5 {
+  font-size:0.9em;
+}
+
+h6 {
+  font-size:0.8em;
+}
+

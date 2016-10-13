@@ -1,69 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-  <meta name="author" content="wrathematics" />
-  <meta name="robots"	content="all" />
-  <meta name="MSSmartTagsPreventParsing" content="true" />
-  <meta name="description" content="Drew Schmidt" />
-  <meta name="keywords" content="pbdR,R,Big Data,Statistical Computing,Parallel Computing" />
-  
-  <meta charset='utf-8' />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-  <meta name="description" content="wrathematics.info : " />
-  
-  <title>Drew Schmidt</title>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="ui/css/bootstrap.min.css" media="screen">
-  <link rel="stylesheet" href="ui/css/custom.css" media="screen">
-</head>
+---
+layout: page
+---
 
-<body>
+{% for post in site.posts limit:10 %}
+  <h2 class="post-title">
+    <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">
+      {{ post.title }}
+    </a>
+  </h2>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="index.html" class="navbar-brand">Drew Schmidt</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="code.html">Code</a></li>
-        <li><a href="presentations.html">Presentations</a></li>
-        <li><a href="publications.html">Publications</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://librestats.com">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
+  <div class="post-meta">
+  <div class="post-time">
+    <i class="fa fa-calendar"></i>
+    <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
   </div>
-</nav>
+  <ul>
+    {% for tag in post.tags %}
+    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+  <div class="post-descr">
+    <p>
+      {{ post.description }}
+    </p>
+  </div>
+  {% endfor %}
 
 
-
-
-<xmp theme="" style="display:none;">
-## Overview
-<img style="padding: 14px" align="right" src="logos/shopping.png" width=400 title="Quote from Barbie, math from Baker.">
-I'm a researcher working at the intersection of data science and high
-performance computing.  I'm currently a graduate student, but I'm very
-interested in a full time data science or developer gig.
-You can [find my CV here](files/DrewSchmidtResume.pdf).
-
-I spend a lot of time thinking about dimension reduction, machine learning,
-distributed systems, and text mining.  I also have a very strong interest in
-profiling and performance analysis.  My research generally involves a lot of
-C and Fortran with an R interface sprinkled on top.
-</xmp>
-
-<script src="ui/strapdown/strapdown.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="ui/js/bootstrap.min.js"></script>
-</html>
+<div class="post-footer">
+  <div class="column-full">
+    <h3><a href="{{ '/archive.html' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></h3>
+  </div>
+</div>
