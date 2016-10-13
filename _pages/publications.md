@@ -8,13 +8,13 @@ title: Publications
 
 ### 2016
 
-* Drew Schmidt, Wei-Chen Chen, George Ostrouchov. *Introducing a New Client/Server Framework for Big Data Analytics with the R Language*. XSEDE16, Miami, Florida, July 2016. [pdfbutton](files/papers/2016/client_server.pdf)
+* Drew Schmidt, Wei-Chen Chen, George Ostrouchov. *Introducing a New Client/Server Framework for Big Data Analytics with the R Language*. XSEDE16, Miami, Florida, July 2016. [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/papers/2016/client_server.pdf)
 
 ### 2014
 * Pragnesh Patel, Drew Schmidt, Wei-Chen Chen, George Ostrouchov.  *High-Level Analytics with R and pbdR on Cray Systems*. CUG 2014, Lugano, Switzerland, January, 2014.
 
 ### 2013
-* George Ostrouchov, Drew Schmidt, Wei-Chen Chen, and Pragnesh Patel.  *Combining R with scalable libraries to get the best of both for big data*. International Association for Statistical Computing Satellite Conference for the 59th ISI World Statistics Congress, August 2013.  [pdfbutton](files/papers/2013/2013IASC.pdf)
+* George Ostrouchov, Drew Schmidt, Wei-Chen Chen, and Pragnesh Patel.  *Combining R with scalable libraries to get the best of both for big data*. International Association for Statistical Computing Satellite Conference for the 59th ISI World Statistics Congress, August 2013.  [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/papers/2013/2013IASC.pdf)
 
 ### 2012
 *  Drew Schmidt, George Ostrouchov, Wei-Chen Chen, and Pragnesh Patel.  *Tight Coupling of R and Distributed Linear Algebra for High-Level Programming with Big Data*. High Performance Computing, Networking, Storage and Analysis (SCC), 2012 SC Companion:, 811-815, November 2012.
@@ -24,10 +24,10 @@ title: Publications
 # Posters
 
 ### 2015
-* Mike Black and Drew Schmidt. *XSEDE Text Analytics Gateway*. XSEDE15, St. Louis, Missouri, July 29, 2015. [pdfbutton](files/papers/2015/tag.pdf)
+* Mike Black and Drew Schmidt. *XSEDE Text Analytics Gateway*. XSEDE15, St. Louis, Missouri, July 29, 2015. [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/papers/2015/tag.pdf)
 
 ### 2014
-* Drew Schmidt and N. Matzke. *Distributed Matrix Exponentiation in R*. useR! 2014, UCLA, Los Angeles, CA, July 2, 2014. [pdfbutton](files/papers/2014/user_expm.pdf)
+* Drew Schmidt and N. Matzke. *Distributed Matrix Exponentiation in R*. useR! 2014, UCLA, Los Angeles, CA, July 2, 2014. [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/papers/2014/user_expm.pdf)
 
 ### 2012
 * George Ostrouchov, Wei-Chen Chen, Drew Schmidt, and Pragnesh Patel.  *Programming with Big Data in R*. 6th Extremely Large Databases Conference (XLDB), Stanford, CA, USA, September 2012. 
@@ -67,4 +67,4 @@ title: Publications
 * Wei-Chen Chen, Drew Schmidt, George Ostrouchov, Pragnesh Patel.  *A Quick Guide to the pbdMPI Package*. [pdfbutton](https://github.com/snoweye/pbdMPI/blob/master/inst/doc/pbdMPI-guide.pdf?raw=true)
 
 
-<script src="./ui/js/buttons.js"></script>
+<script src="{{site.baseurl | prepend:site.url}}/_pages/ui/js/buttons.js"></script>

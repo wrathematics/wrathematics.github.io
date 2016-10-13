@@ -4,7 +4,7 @@ title: Code
 ---
 
 
-<link rel="stylesheet" href="ui/css/custom.css" media="screen">
+<link rel="stylesheet" href="{{site.baseurl | prepend:site.url}}/_pages/ui/css/custom.css" media="screen">
 
 ## R Packages
 
@@ -79,4 +79,4 @@ SHINRA is a set of tools for benchmarkers working with R.  For more information 
 | Figlet as a Service | A demo of the Rfiglet package.  Written with R and shiny.  Source is available in the Rfiglet package. | [ghbutton](http://github.com/wrathematics/Rfiglet) <br> [livebutton](https://wrathematics.shinyapps.io/faas/)
 
 
-<script src="./ui/js/buttons.js"></script>
+<script src="{{site.baseurl | prepend:site.url}}/_pages/ui/js/buttons.js"></script>
