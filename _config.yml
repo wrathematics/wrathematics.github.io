@@ -4,7 +4,7 @@ name: wrathematics
 description: My Stack Overfloweth
 
 # Url is currently only used only for the RSS feed in feed.xml
-url: http://wrathematics.github.io
+url: https://wrathematics.github.io
 #url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
@@ -28,10 +28,7 @@ social:
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key:
-# Yandex metrika (https://metrica.yandex.com/) leave blank to ignore or put true to use
-yandex_metrica:
-
+# google_analytics_key:
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
@@ -49,7 +46,7 @@ permalink: /:year/:month/:day/:title
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-  hard_wrap: true
+  hard_wrap: false
 
 exclude: ['README.md', 'LICENSE']
 include: ['_pages']
