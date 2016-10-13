@@ -3,10 +3,9 @@ layout: page
 title: About
 ---
 
-<!-- <img style="padding: 14px" align="right" src="logos/shopping.png" width=400 title="Quote from Barbie, math from Baker."> -->
-![logo](logos/shopping.png "Math by Baker, quote by Barbie")
+![logo]({{site.baseurl | prepend:site.url}}/_pages/logos/shopping.png "Math by Baker, quote by Barbie"){:width="400px" .center-image align="right" style="margin: 10"}
 
-I'm a researcher working at the intersection of data science and high performance computing.  I'm currently a graduate student, but I'm very interested in a full time data science or developer gig. You can [find my CV here](files/DrewSchmidtResume.pdf).
+I'm a researcher working at the intersection of data science and high performance computing.  I'm currently a graduate student, but I'm very interested in a full time data science or developer gig. You can [find my CV here](files/DrewSchmidtResume.pdf).  For more detailed information:
 
 * See my [code](code.html)
 * See my [presentations](presentations.html)
