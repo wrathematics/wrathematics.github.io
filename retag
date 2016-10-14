@@ -1,0 +1,4 @@
+#!/bin/sh
+
+jekyll build
+cp -r _site/tag .
