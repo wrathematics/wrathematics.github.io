@@ -12,7 +12,8 @@ I'm a researcher working at the intersection of data science and high performanc
 * See my [publications]({{site.baseurl | prepend:site.url}}/_pages/publications)
 
 
-<br><br>
+<br>
+
 ## Disclaimers
 
 I am not compensated in any way, financial or otherwise, for posting to,
