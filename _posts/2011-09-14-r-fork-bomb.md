@@ -24,7 +24,7 @@ The most beautiful example of a fork bomb, and really one of the most
 beautiful lines of code ever, was created by [Denis
 Rolo](https://secure.wikimedia.org/wikipedia/en/wiki/Jaromil):
 
-```shell
+```bash
 :(){ :|:& };:
 ```
 
@@ -50,7 +50,6 @@ package](http://cran.r-project.org/web/packages/multicore/index.html):
 
 ```R
 library(multicore)
-
 while (TRUE) fork()
 ```
 

@@ -13,12 +13,6 @@ tags:
 - Shell Scripting
 author: wrathematics
 ---
--------------------------------------<br />
-Total source files examined:	 1360</p>
-<p>Lines of R code:	 149520<br />
-Lines of C code:	 346778<br />
-Lines of Fortran code:	 175409<br />
--------------------------------<br />
 
 
 My [boss](http://r4stats.com) sent me an email (on my day off!) asking
@@ -42,17 +36,15 @@ first let's address the original question.
 By a respectable majority, most of the source code files of core R are
 written in R:
 
-[![]({{ site.baseurl }}/assets/pct_r_source_files.png "pct_r_source_files"){.alignnone
-.size-full .wp-image-274 width="480"
-height="480"}](http://librestats.files.wordpress.com/2011/08/pct_r_source_files.png)
+![]({{ site.baseurl }}/assets/pct_r_source_files.png "pct_r_source_files")
 
 At first glance, it seems like Fortran doesn't give much of a
 contribution. However, when we look at the proportion of lines of code,
 we see something more reasonable:
-[![]({{ site.baseurl }}/assets/pct_r_code.png "pct_r_code"){.size-full
-.wp-image-273 .aligncenter width="480"
-height="480"}](http://librestats.files.wordpress.com/2011/08/pct_r_code.png)So
-there you have it. Roughly 22% of R is written in R. I know some people
+
+![]({{ site.baseurl }}/assets/pct_r_code.png "pct_r_code")
+
+So there you have it. Roughly 22% of R is written in R. I know some people
 want R to be written in R for some crazy reason; but really, if
 anything, that 22% is too high. Trust me, you really want C and Fortran
 to be doing all the heavy lifting so that things stay nice and peppy.
@@ -80,34 +72,30 @@ solution; I'm pretty good at those, if I may say so myself. Basically
 the shell script hops into across the R-version/src/ folder and gets a
 line count of each .R, .c, and .f file. That's it; here it is:
 
-```shell
+```bash
 #!/bin/sh
-
+ 
 outdir="/path/to/where/you/want/the/csv/dumped"
-
-rdir="/path/to/R/source/root/directory/to/be/examined" #eg,
-\~/R-2.13.1/
-cd \$rdir/src
-
-for rfile in \`find -name *.R\`
+ 
+rdir="/path/to/R/source/root/directory/to/be/examined" #eg, ~/R-2.13.1/
+cd $rdir/src
+ 
+for rfile in `find -name *.R`
 do
-loc=\`wc -l \$rfile | sed -e 's/ ./,/' -e 's/\\/[^/]*\\//\\//g' -e
-'s/\\/[^/]*\\//\\//g' -e 's/\\/[^/]*\\///g' -e 's/\\///'\`
-echo "R,\$loc" >> \$outdir/r_source_loc.csv
+  loc=`wc -l $rfile | sed -e 's/ ./,/' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\///g' -e 's/\///'`
+  echo "R,$loc"  >> $outdir/r_source_loc.csv
 done
-
-for cfile in \`find -name *.c\`
+ 
+for cfile in `find -name *.c`
 do
-loc=\`wc -l \$cfile | sed -e 's/ ./,/' -e 's/\\/[^/]*\\//\\//g' -e
-'s/\\/[^/]*\\//\\//g' -e 's/\\/[^/]*\\///g' -e 's/\\///'\`
-echo "C,\$loc" >> \$outdir/r_source_loc.csv
+  loc=`wc -l $cfile | sed -e 's/ ./,/' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\///g' -e 's/\///'`
+  echo "C,$loc"  >> $outdir/r_source_loc.csv
 done
-
-for ffile in \`find -name *.f\`
+ 
+for ffile in `find -name *.f`
 do
-loc=\`wc -l \$ffile | sed -e 's/ ./,/' -e 's/\\/[^/]*\\//\\//g' -e
-'s/\\/[^/]*\\//\\//g' -e 's/\\/[^/]*\\///g' -e 's/\\///'\`
-echo "Fortran,\$loc" >> \$outdir/r_source_loc.csv
+  loc=`wc -l $ffile | sed -e 's/ ./,/' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\//\//g' -e 's/\/[^/]*\///g' -e 's/\///'`
+  echo "Fortran,$loc"  >> $outdir/r_source_loc.csv
 done
 ```
 
@@ -118,76 +106,52 @@ for examples).
 
 ```R
 r.loc <- read.csv("r_source_loc.csv",header=FALSE)
-
+ 
 a <-r.loc[which(r.loc[1] == "R"),][2]
 b <-r.loc[which(r.loc[1] == "C"),][2]
 c <-r.loc[which(r.loc[1] == "Fortran"),][2]
-
+ 
 files.total <- length(a[,1])+length(b[,1])+length(c[,1])
 loc.total <- sum(a)+sum(b)+sum(c)
-
-cat(sprintf("
-Number .R source files:\\t\\t %d
-Number .c source
-files:\\t\\t %d
-Number .f source files:\\t\\t
-%d
-",length(a[,1]),length(b[,1]),length(c[,1])))
+ 
+cat(sprintf("\nNumber .R source files:\t\t %d\nNumber .c source files:\t\t %d\nNumber .f source files:\t\t %d\n",length(a[,1]),length(b[,1]),length(c[,1])))
 cat(sprintf("-------------------------------------"))
-cat(sprintf("
-Total source files examined:\\t
-%d
-
-",length(a[,1])+length(b[,1])+length(c[,1])))
-
-cat(sprintf("
-Lines of R code:\\t %d
-Lines of C code:\\t %d
-Lines
-of Fortran code:\\t %d
-",sum(a),sum(b),sum(c)))
+cat(sprintf("\nTotal source files examined:\t %d\n\n",length(a[,1])+length(b[,1])+length(c[,1])))
+ 
+cat(sprintf("\nLines of R code:\t %d\nLines of C code:\t %d\nLines of Fortran code:\t %d\n",sum(a),sum(b),sum(c)))
 cat(sprintf("-------------------------------"))
-cat(sprintf("
-Total lines of code:\\t %d
-
-",loc.total))
-
-cat(sprintf("
-Among all lines of code being either R, C, or
-Fortran:
-"))
-cat(sprintf("%% code in R:\\t\\t %f
-%% code in C:\\t\\t %f
-%% code
-in Fortran:\\t
-%f
-",100*sum(a)/loc.total,100*sum(b)/loc.total,100*sum(c)/loc.total))
-
+cat(sprintf("\nTotal lines of code:\t %d\n\n",loc.total))
+ 
+cat(sprintf("\nAmong all lines of code being either R, C, or Fortran:\n"))
+cat(sprintf("%% code in R:\t\t %f\n%% code in C:\t\t %f\n%% code in Fortran:\t %f\n",100*sum(a)/loc.total,100*sum(b)/loc.total,100*sum(c)/loc.total))
+ 
 png("pct_r_source_files.png")
-barplot(c(length(a[,1])/files.total,length(b[,1])/files.total,length(c[,1])/files.total),main="Percent
-of Core R Sourcecode Files",names.arg=c("R","C","Fortran"))
+barplot(c(length(a[,1])/files.total,length(b[,1])/files.total,length(c[,1])/files.total),main="Percent of Core R Sourcecode Files",names.arg=c("R","C","Fortran"))
 dev.off()
-
+ 
 png("pct_r_code.png")
-barplot(c(100*sum(a)/loc.total,100*sum(b)/loc.total,100*sum(c)/loc.total),main="Percent
-of Core R Lines of Code",names.arg=c("R","C","Fortran"))
+barplot(c(100*sum(a)/loc.total,100*sum(b)/loc.total,100*sum(c)/loc.total),main="Percent of Core R Lines of Code",names.arg=c("R","C","Fortran"))
 dev.off()
 ```
 
 From the R script, we can get precise figures, which I prefer to
 pictures any day. But I seem to be an outlier in this regard...
 
-```R
-Number .R source files: 729
-Number .c source files: 586
-Number .f source files: 45
-----------------------------------
-----------------------------
-Total lines of code: 671707
-
+```
+Number .R source files:      729
+Number .c source files:      586
+Number .f source files:      45
+-------------------------------------
+Total source files examined:     1360
+ 
+Lines of R code:     149520
+Lines of C code:     346778
+Lines of Fortran code:   175409
+-------------------------------
+Total lines of code:     671707
+ 
 Among all lines of code being either R, C, or Fortran:
-% code in R: 22.259705
-% code in C: 51.626379
-% code in Fortran: 26.113916
-
+% code in R:         22.259705
+% code in C:         51.626379
+% code in Fortran:   26.113916
 ```
