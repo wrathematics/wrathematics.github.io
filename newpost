@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# pass in post title in quotes as only arg
+POSTSDIR="_posts"
+
+
+if [ "X$1" = X ];then
+  echo "ERROR: must give a post title!"
+  exit 1
+fi
+
+DATE=`date +%Y-%m-%d`
+TIME=`date +%H:%M:%S.000000000`
+TZ=`date +%:z`
+
+FNAME_TITLE=`echo $1 | tr '[:upper:]' '[:lower:]' | sed -e 's/ /-/g'`
+
+fname="${DATE}-${FNAME_TITLE}.md"
+cd $POSTSDIR
+
+if [ -e "$fname" ];then
+  echo "ERROR: post with that title already exists!"
+  exit 2
+fi
+
+touch $fname
+
+echo "---"                    >> $fname
+echo "layout: post"           >> $fname
+echo "type: post"             >> $fname
+echo "title: $1"              >> $fname
+echo "author: wrathematics"   >> $fname
+echo "date: $DATE $TIME $TZ"  >> $fname
+echo "comments: true"         >> $fname
+echo "published: true"        >> $fname
+echo "status: publish"        >> $fname
+echo "categories:\n- "        >> $fname
+echo "tags:\n- "              >> $fname
+echo "---\n\n"                >> $fname
+
+exit 0
+
