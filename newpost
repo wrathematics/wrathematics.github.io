@@ -25,10 +25,12 @@ fi
 
 touch $fname
 
+TITLE=`r -e "cat(tools::toTitleCase(\"$1\"))"`
+
 echo "---"                    >> $fname
 echo "layout: post"           >> $fname
 echo "type: post"             >> $fname
-echo "title: $1"              >> $fname
+echo "title: $TITLE"          >> $fname
 echo "author: wrathematics"   >> $fname
 echo "date: $DATE $TIME $TZ"  >> $fname
 echo "comments: true"         >> $fname
@@ -39,4 +41,3 @@ echo "tags:\n- "              >> $fname
 echo "---\n\n"                >> $fname
 
 exit 0
-
