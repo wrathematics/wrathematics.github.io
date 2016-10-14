@@ -1,6 +1,7 @@
 ---
 layout: page 
 title: Presentatons
+permalink: /presentations
 ---
 
 
