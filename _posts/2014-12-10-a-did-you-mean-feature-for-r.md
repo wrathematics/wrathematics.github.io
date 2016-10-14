@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: A "did you mean?" Feature for R
 date: 2014-12-10 10:51:33.000000000 -05:00
 type: post

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Intentionally Writing Obtuse Code
 date: 2013-12-09 16:15:31.000000000 -05:00
 type: post

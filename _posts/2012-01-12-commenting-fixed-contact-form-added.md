@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Commenting fixed, contact form added
 date: 2012-01-12 21:37:18.000000000 -05:00
 type: post

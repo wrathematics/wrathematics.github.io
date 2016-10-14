@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Controlling a Remote R Session from a Local One
 date: 2015-10-28 07:58:52.000000000 -04:00
 type: post

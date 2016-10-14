@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'A New Use for Pipes in R: Forkbombs'
 date: 2014-08-06 12:41:40.000000000 -04:00
 type: post

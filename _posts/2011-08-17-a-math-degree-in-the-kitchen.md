@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: A Math Degree in the Kitchen
 date: 2011-08-17 13:02:20.000000000 -04:00
 type: post

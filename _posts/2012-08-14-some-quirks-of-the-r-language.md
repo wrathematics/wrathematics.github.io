@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Some Quirks of the R Language
 date: 2012-08-14 23:31:08.000000000 -04:00
 type: post

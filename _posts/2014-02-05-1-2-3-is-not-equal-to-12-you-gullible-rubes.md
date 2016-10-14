@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 1 + 2 + 3 + ... is not equal to -1/12, you gullible rubes
 date: 2014-02-05 22:12:57.000000000 -05:00
 type: post

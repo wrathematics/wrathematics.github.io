@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Visualizing the CRAN:  Graphing Package Dependencies'
 date: 2012-05-17 23:39:01.000000000 -04:00
 type: post

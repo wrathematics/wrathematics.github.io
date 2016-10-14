@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: R Fork Bomb
 date: 2011-09-14 22:18:30.000000000 -04:00
 type: post

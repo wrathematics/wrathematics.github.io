@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Searching an R Function's Source Code
 date: 2014-05-01 23:23:34.000000000 -04:00
 type: post

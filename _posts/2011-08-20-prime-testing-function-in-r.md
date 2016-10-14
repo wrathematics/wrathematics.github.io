@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Prime testing function in R
 date: 2011-08-20 20:04:25.000000000 -04:00
 type: post

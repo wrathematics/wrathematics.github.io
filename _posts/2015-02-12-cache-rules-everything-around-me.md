@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Cache Rules Everything Around Me
 date: 2015-02-12 08:15:12.000000000 -05:00
 type: post

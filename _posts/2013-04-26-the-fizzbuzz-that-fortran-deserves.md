@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: The fizzbuzz that Fortran Deserves
 date: 2013-04-26 16:53:57.000000000 -04:00
 type: post

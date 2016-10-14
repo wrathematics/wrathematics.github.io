@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Perform co-operations with the coop package
 date: 2016-04-06 06:09:40.000000000 -04:00
 type: post

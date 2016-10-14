@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: pbdR Updates - Distributed lm.fit() and More
 date: 2012-12-03 18:05:15.000000000 -05:00
 type: post

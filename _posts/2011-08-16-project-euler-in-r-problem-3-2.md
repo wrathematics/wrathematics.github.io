@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Project Euler in R:  Problem 3'
 date: 2011-08-16 23:55:35.000000000 -04:00
 type: post

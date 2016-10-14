@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Advanced R Profiling with pbdPAPI
 date: 2014-07-22 23:48:00.000000000 -04:00
 type: post

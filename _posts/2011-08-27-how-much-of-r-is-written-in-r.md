@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How Much of R is Written in R?
 date: 2011-08-27 00:44:21.000000000 -04:00
 type: post

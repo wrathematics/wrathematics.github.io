@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Honing Your R Skills for Job Interviews
 date: 2012-01-10 02:29:33.000000000 -05:00
 type: post

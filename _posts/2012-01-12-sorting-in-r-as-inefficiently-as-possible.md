@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Sorting in R as Inefficiently as Possible
 date: 2012-01-12 23:08:27.000000000 -05:00
 type: post

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: '"F-bombs" in GitHub Commits (warning: contains profanity)'
 date: 2014-07-30 07:06:49.000000000 -04:00
 type: post

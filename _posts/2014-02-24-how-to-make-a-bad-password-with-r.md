@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How to Make a Bad Password with R
 date: 2014-02-24 08:13:25.000000000 -05:00
 type: post

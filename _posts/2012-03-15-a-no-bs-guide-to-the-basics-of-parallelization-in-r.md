@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: A No BS Guide to the Basics of Parallelization in R
 date: 2012-03-15 20:24:03.000000000 -04:00
 type: post

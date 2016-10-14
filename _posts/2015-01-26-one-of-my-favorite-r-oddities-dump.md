@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'One of My Favorite R Oddities:  dump()'
 date: 2015-01-26 05:11:49.000000000 -05:00
 type: post

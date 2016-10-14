@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Introducing Rfiglet: ASCII logos from the comfort of R'
 date: 2014-08-19 06:22:50.000000000 -04:00
 type: post

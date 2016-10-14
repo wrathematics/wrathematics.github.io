@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Project Euler...in LaTeX?
 date: 2012-04-23 18:50:28.000000000 -04:00
 type: post

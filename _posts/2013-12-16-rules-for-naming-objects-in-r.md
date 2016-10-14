@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Rules for Naming Objects in R
 date: 2013-12-16 20:00:05.000000000 -05:00
 type: post

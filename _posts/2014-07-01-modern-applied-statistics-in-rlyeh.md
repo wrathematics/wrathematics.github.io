@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Modern Applied Statistics in R'lyeh
 date: 2014-07-01 01:27:12.000000000 -04:00
 type: post

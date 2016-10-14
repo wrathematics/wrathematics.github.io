@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Text Analytics Webapp Webinar
 date: 2015-08-28 11:11:25.000000000 -04:00
 type: post

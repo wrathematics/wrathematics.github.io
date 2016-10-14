@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Floating Point Arithmetic Is Hilarious
 date: 2015-04-17 18:48:43.000000000 -04:00
 type: post

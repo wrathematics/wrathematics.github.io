@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: fibonacci series by goto in fortran 77
 date: 2015-03-19 20:42:38.000000000 -04:00
 type: post

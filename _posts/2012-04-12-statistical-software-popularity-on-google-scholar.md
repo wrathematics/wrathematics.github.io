@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Statistical Software Popularity on Google Scholar
 date: 2012-04-12 08:00:07.000000000 -04:00
 type: post

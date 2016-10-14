@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'How Much of R is Written in R Part 2:  Contributed Packages'
 date: 2011-08-29 22:39:18.000000000 -04:00
 type: post

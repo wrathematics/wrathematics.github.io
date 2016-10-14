@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Project Euler in LaTeX:  Problem 2'
 date: 2012-05-01 20:32:53.000000000 -04:00
 type: post

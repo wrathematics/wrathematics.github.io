@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Autoplot:  Graphical Methods with ggplot2'
 date: 2012-06-11 08:00:56.000000000 -04:00
 type: post

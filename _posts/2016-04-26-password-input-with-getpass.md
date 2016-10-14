@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Password Input with getPass
 date: 2016-04-26 08:36:21.000000000 -04:00
 type: post
