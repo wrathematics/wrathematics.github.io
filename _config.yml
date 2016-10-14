@@ -37,7 +37,7 @@ disqus: librestats
 comments: true
 
 permalinks: 
-  asdf: '/:year/:month/:day/:title/'
+  oldblogstyle: '/:year/:month/:day/:title/'
   other: '/:name'
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
