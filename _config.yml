@@ -11,10 +11,10 @@ url: https://wrathematics.github.io
 # baseurl: ''
 
 share:
-  facebook: false
-  twitter: false
+  facebook: true
+  twitter: true
   gplus: false
-  linkedin: false
+  linkedin: true
   pinterest: false
   email: true
 
