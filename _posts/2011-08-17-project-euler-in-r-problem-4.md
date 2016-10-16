@@ -62,42 +62,38 @@ And that is why programmers are terrible at mathematics.
 ElapsedTime <- system.time({
 ##########################
 RearrangeVector <- function(vec, n=1){
-vec <- c(tail(vec, length(vec)-n), head(vec,n))
-vec
+  vec <- c(tail(vec, length(vec)-n), head(vec,n))
+  vec
 }
-
+ 
 palindromes <- numeric(9*10*10)
 i <- 1
 for (a1 in 1:9){
-for (a2 in 0:9){
-for (a3 in 0:9){
-palindromes[i] <- a1*10^5 + a2*10^4 + a3*10^3
-+ a3*10^2 + a2*10^1 + a1
-i <- i+1
+  for (a2 in 0:9){
+    for (a3 in 0:9){
+      palindromes[i] <- a1*10^5 + a2*10^4 + a3*10^3
+                          + a3*10^2 + a2*10^1 + a1
+      i <- i+1
+    }
+  }
 }
-}
-}
-
+ 
 palindromes <- sort(palindromes, decreasing=TRUE)
-
+ 
 prod <- numeric(0)
 temp <- 899:999
 for (n in 1:100){
-prod <- c(prod, temp*RearrangeVector(temp, n))
+  prod <- c(prod, temp*RearrangeVector(temp, n))
 }
-
+ 
 acceptable <- palindromes[palindromes %in% prod]
-
+ 
 answer <- acceptable[1]
 ##########################
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-",
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n",
 answer, ElapsedMins, ElapsedSecs))
 ```
 

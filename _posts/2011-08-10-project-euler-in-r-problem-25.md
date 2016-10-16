@@ -39,71 +39,71 @@ least that the Project Euler people like to occasionally throw a bone to
 math-types instead of letting the computer science nerds have all the
 fun.
 
-Ok, so, remember that weird "continued fraction" expansion of \$latex
-\\phi\$ that I gave in the solution to Problem 2? If you stare at it for
+Ok, so, remember that weird "continued fraction" expansion of $$
+\phi $$ that I gave in the solution to Problem 2? If you stare at it for
 a few seconds, then it should be obvious that
 
-\$latex \\phi = 1+\\displaystyle\\frac{1}{\\phi}\$
+$$ \phi = 1+\displaystyle\frac{1}{\phi} $$
 
 and hence
 
-\$latex 1-\\phi = \\displaystyle\\frac{1}{\\phi}\$
+$$ 1-\phi = \displaystyle\frac{1}{\phi} $$
 
-While we're here, it's worth pointing out that if you *define* \$latex
-\\phi\$ in terms of that continued fraction expansion, then you can
-deduce from that definition the numeric value of \$latex \\phi\$ , since
-from the first equation above, if we multiply both sides by \$latex
-\\phi\$, then rearrange things and get
+While we're here, it's worth pointing out that if you *define* $$
+\phi $$ in terms of that continued fraction expansion, then you can
+deduce from that definition the numeric value of $$ \phi $$ , since
+from the first equation above, if we multiply both sides by $$
+\phi $$, then rearrange things and get
 
-\$latex \\phi^2-\\phi-1=0\$
+$$ \phi^2-\phi-1=0 $$
 
 Using the good old quadratic formula gives two solutions (or in other
-words, two possibilities for \$latex \\phi\$), namely \$latex
-\\displaystyle\\frac{1\\pm\\sqrt{5}}{2}\$. One of these two
+words, two possibilities for $$ \phi $$), namely $$
+\displaystyle\frac{1\pm\sqrt{5}}{2} $$. One of these two
 possibilities is positive and the other negative. From there it isn't
 hard to see which is which.
 
 Ok, so back to Project Euler. With the above observation regarding
-\$latex 1-\\phi\$, we can rewrite the closed form expression of the
-Fibonacci Numbers (using the Project Euler convention that \$latex
-F_1=F_2=1\$) as
+$$ 1-\phi $$, we can rewrite the closed form expression of the
+Fibonacci Numbers (using the Project Euler convention that $$
+F_1=F_2=1 $$) as
 
-\$latex F_n =
-\\displaystyle\\frac{\\phi^n-\\left(\\frac{1}{\\phi}\\right)^n}{\\sqrt{5}}\$
+$$ F_n =
+\displaystyle\frac{\phi^n-\left(\frac{1}{\phi}\right)^n}{\sqrt{5}} $$
 
-Then for sufficiently large \$latex n\$ (and thinking about the problem
-at hand for 3 seconds should convince you that the \$latex n\$ we're
+Then for sufficiently large $$ n $$ (and thinking about the problem
+at hand for 3 seconds should convince you that the $$ n $$ we're
 after should do the trick), we have
 
-\$latex F_n\\approx\\displaystyle\\frac{\\phi^n}{\\sqrt{5}}\$**
+$$ F_n\approx\displaystyle\frac{\phi^n}{\sqrt{5}} $$**
 
-since of course \$latex
-\\displaystyle\\left(\\frac{1}{\\phi}\\right)^n\$ will be *quite*
+since of course $$
+\displaystyle\left(\frac{1}{\phi}\right)^n $$ will be *quite*
 small. It follows that we need only find the smallest natural number
-\$latex n\$ satisfying
+$$ n $$ satisfying
 
-\$latex F_n = \\displaystyle\\frac{\\phi^n}{\\sqrt{5}}>10^{999}\$
+$$ F_n = \displaystyle\frac{\phi^n}{\sqrt{5}}>10^{999} $$
 
-And since \$latex \\log\$ is an increasing function, this is equivalent
+And since $$ \log $$ is an increasing function, this is equivalent
 to needing to find the smallest n satisfying
 
-\$latex \\log_{10}(F_n)>999\$
+$$ \log_{10}(F_n)>999 $$
 
 The problem is now trivial. Note that from the above observation
-regarding \$latex \\displaystyle\\left(\\frac{1}{\\phi}\\right)^n\$ and
+regarding $$ \displaystyle\left(\frac{1}{\phi}\right)^n $$ and
 from basic properties of logarithms:
 
-\$latex \\log_{10}(F_n) =
-n\\log_{10}(\\phi)-\\frac{1}{2}\\log_{10}(5)\$
+$$ \log_{10}(F_n) =
+n\log_{10}(\phi)-\frac{1}{2}\log_{10}(5) $$
 
-Whence, we wish to find the smallest natural number \$latex n\$
+Whence, we wish to find the smallest natural number $$ n $$
 satisfying
 
-\$latex
-n>\\displaystyle\\frac{999+\\frac{1}{2}\\log_{10}(5)}{\\log_{10}\\left(\\phi\\right)}\\approx
-4781.859\$
+$$
+n>\displaystyle\frac{999+\frac{1}{2}\log_{10}(5)}{\log_{10}\left(\phi\right)}\approx
+4781.859 $$
 
-It follows that \$latex n=4782\$.
+It follows that $$ n=4782 $$.
 
 Who says a masters in math is useless?
 
@@ -118,11 +118,7 @@ answer<-ceiling((999+1/2*log(5, 10))/log(phi, 10))
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-", answer, ElapsedMins, ElapsedSecs))
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n", answer, ElapsedMins, ElapsedSecs))
 ```
 
 **

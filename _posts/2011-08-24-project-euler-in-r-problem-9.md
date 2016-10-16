@@ -36,26 +36,22 @@ simple fact. Oh well.
 ElapsedTime <- system.time({
 ##########################
 for (a in c(1:333)){
-for (b in c(334:998)){
-test <- a+b+sqrt(a^2+b^2)
-if (test==1000){
-win.a <- a
-win.b <- b
-break
+  for (b in c(334:998)){
+    test <- a+b+sqrt(a^2+b^2)
+    if (test==1000){
+      win.a <- a
+      win.b <- b
+      break
+    }
+  }
 }
-}
-}
-
+ 
 answer <- win.a*win.b*sqrt(win.a^2+win.b^2)
 ##########################
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-", answer, ElapsedMins, ElapsedSecs))
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n", answer, ElapsedMins, ElapsedSecs))
 ```
 
 **Output:**

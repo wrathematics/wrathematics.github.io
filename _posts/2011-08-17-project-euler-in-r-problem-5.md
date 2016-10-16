@@ -25,8 +25,7 @@ might find something a bit strange in this solution, namely in the
 prime-y stuff; however, I don't really want to get into that until
 [Problem
 7](http://librestats.wordpress.com/2011/08/19/project-euler-in-r-problem-7/ "Project Euler in R:  Problem 7").
-So I won't.**
-**
+So I won't. 
 
 **R Code:**
 
@@ -34,40 +33,39 @@ So I won't.**
 ElapsedTime <- system.time({
 ##########################
 ###
-# Function to get primes below specified n; option to get only those
-below sqrt(n)
+# Function to get primes below specified n; option to get only those below sqrt(n)
 PrimesBelow <- function(n,below.sqrt=FALSE){
-if (below.sqrt==TRUE){
-m <- ceiling(sqrt(n))
-} else {
-m <- n
+  if (below.sqrt==TRUE){
+    m <- ceiling(sqrt(n))
+  } else {
+    m <- n
+  }
+ 
+  primes <- c(2, 3)
+  i <- 3
+  while (i < m-1){
+    flag <- 0
+    i <- i+2
+    if (i%%6 == 3){
+      flag <- 1
+    }
+    if (flag == 0){
+      s <- sqrt(i)+1
+      possibleprimes <- primes[primes < s]
+      for (prime in possibleprimes){
+        if ((i%%prime == 0)){
+          flag <- 1
+          break
+          }
+        }
+        if (flag == 0){
+          primes <- c(primes,i)
+        }
+      }
+    }
+  primes
 }
-
-primes <- c(2, 3)
-i <- 3
-while (i < m-1){
-flag <- 0
-i <- i+2
-if (i%%6 == 3){
-flag <- 1
-}
-if (flag == 0){
-s <- sqrt(i)+1
-possibleprimes <- primes[primes < s]
-for (prime in possibleprimes){
-if ((i%%prime == 0)){
-flag <- 1
-break
-}
-}
-if (flag == 0){
-primes <- c(primes,i)
-}
-}
-}
-primes
-}
-
+ 
 # Function to get the prime factorization of all integers below
 PrimeFact <- function(n){
 list <- numeric(0)
@@ -90,13 +88,13 @@ list <- data.frame(list, data.frame(ps))
 list
 }
 ###
-
+ 
 n <- 20
-
+ 
 primes <- PrimesBelow(n)
-
+ 
 list <- PrimeFact(n)
-
+ 
 expnts <- numeric(0)
 for (nump in 1:length(primes)){
 temp <- numeric(0)
@@ -105,19 +103,14 @@ temp <- c(temp, list[[i]][nump])
 }
 expnts <- c(expnts, sort(temp, decreasing=TRUE)[1])
 }
-
+ 
 answer <- prod(primes^expnts)
 ##########################
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-",
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n",
 answer, ElapsedMins, ElapsedSecs))
-
 ```
 
 **Output:**

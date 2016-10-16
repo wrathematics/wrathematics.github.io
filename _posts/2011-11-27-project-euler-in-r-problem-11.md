@@ -67,61 +67,52 @@ x <- system("echo '
 20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
-' | sed -e 's/ /,/g' -e '/^\$/d' -e 's/\$/,/g' | tr -d '\\
-' | sed
-'s/.\$//'", intern=TRUE)
-
+' | sed -e 's/ /,/g' -e '/^$/d' -e 's/$/,/g' | tr -d '\\n' | sed 's/.$//'", intern=TRUE)
+ 
 y <- t(matrix(scan(textConnection(x), sep=","), 20, 20))
 closeAllConnections()
-
+ 
 vert <- 1;horiz <- 1;diag1 <- 1;diag2 <- 1
-vert.test <- 1;horiz.test <- 1;diag1.test <- 1;diag2.test <-
-1
+vert.test <- 1;horiz.test <- 1;diag1.test <- 1;diag2.test <- 1
 for (i in 1:17){
-for (j in 1:17){
-# Vertical
-vert.test <- prod(y[i, j], y[i, j+1], y[i, j+2], y[i, j+3])
-if (vert.test > vert){
-vert <- vert.test
+    for (j in 1:17){
+        # Vertical
+        vert.test <- prod(y[i, j], y[i, j+1], y[i, j+2], y[i, j+3])
+        if (vert.test > vert){
+            vert <- vert.test
+        }
+        # Horizontal
+        horiz.test <- prod(y[i, j], y[i+1, j], y[i+2, j], y[i+3, j])
+        if (horiz.test > horiz){
+            horiz <- horiz.test
+        }
+        # Diagonal \
+        diag1.test <- prod(y[i, j], y[i+1, j+1], y[i+2, j+2], y[i+3, j+3])
+        if (diag1.test > diag1){
+            diag1 <- diag1.test
+        }
+        # Diagonal /
+        k <- i+3
+        diag2.test <- prod(y[k, j], y[k-1, j+1], y[k-2, j+2], y[k-3, j+3])
+        if (diag2.test > diag2){
+            diag2 <- diag2.test
+        }
+    }
 }
-# Horizontal
-horiz.test <- prod(y[i, j], y[i+1, j], y[i+2, j], y[i+3, j])
-if (horiz.test > horiz){
-horiz <- horiz.test
-}
-# Diagonal \\
-diag1.test <- prod(y[i, j], y[i+1, j+1], y[i+2, j+2], y[i+3,
-j+3])
-if (diag1.test > diag1){
-diag1 <- diag1.test
-}
-# Diagonal /
-k <- i+3
-diag2.test <- prod(y[k, j], y[k-1, j+1], y[k-2, j+2], y[k-3,
-j+3])
-if (diag2.test > diag2){
-diag2 <- diag2.test
-}
-}
-}
-
+ 
 answer <- max(vert, horiz, diag1, diag2)
-
+ 
 ##########################
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-",
-answer, ElapsedMins, ElapsedSecs))
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n",
+    answer, ElapsedMins, ElapsedSecs))
 ```
 
 **Output:**
 
-```R
+```
 The answer is:  70600674
 Total elapsed time:  0 minutes and 0.010000 seconds
 ```

@@ -26,10 +26,9 @@ dear to my heart.****
 I can't tell you how many kids show up at university thinking they're
 hot shits because they took Calc 1 in high school, but don't know that
 
-\$latex a^2+b^2
-eq (a+b)^2\$****
+$$ a^2+b^2 \neq (a+b)^2 $$
 
-This is just one of many adorable things freshmen tend to belive**,**
+This is just one of many adorable things freshmen tend to belive, 
 along with all their ridiculous political beliefs and thinking they'll
 somehow change the world in any appreciable way. Adorable.
 
@@ -59,15 +58,15 @@ misunderstandings, not counting that mentioned above. Keep in mind,
 everything that follows is *not* true, and what's more, they're not true
 for practically any numbers you throw at them (try it yourself!)
 
-\$latex \\sqrt{a^2+b^2}=a+b\$
+$$ \sqrt{a^2+b^2}=a+b $$
 
-\$latex -(a+b)=-a+b\$
+$$ -(a+b)=-a+b $$
 
-\$latex \\frac{a}{c}+\\frac{b}{d} = \\frac{a+b}{c+d}\$
+$$ \frac{a}{c}+\frac{b}{d} = \frac{a+b}{c+d} $$
 
-\$latex \\frac{a+b}{a}=b\$
+$$ \frac{a+b}{a}=b $$
 
-\$latex \\frac{a}{a+b}=\\frac{1}{b}\$
+$$ \frac{a}{a+b}=\frac{1}{b} $$
 
 And that's not even getting into logarithms or trigonometry, which
 *none* of them understand.
@@ -93,5 +92,5 @@ Total elapsed time: %d minutes and
 ```
 
 **Output:**
-****The answer is: 25164150
+The answer is: 25164150
 Total elapsed time: 0 minutes and 0.000000 seconds

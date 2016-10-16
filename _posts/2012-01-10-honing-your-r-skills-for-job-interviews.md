@@ -43,12 +43,19 @@ Sounds simple enough, but if you've never though about this problem
 before, then I encourage you to do so before reading on. One way we
 might try to solve the problem is as follows:
 
-```r
+```R
 # fizzbuzz with a loop
 for (i in 1:100){
-if (i%%3==0) if (i%%5==0) print("fizzbuzz") else print("fizz") else
-if (i%%5==0) print("buzz") else
-print(i)
+  if (i%%3 == 0)
+    if (i%%5 == 0)
+      print("fizzbuzz")
+    else
+      print("fizz")
+  else
+    if (i%%5 == 0)
+      print("buzz")
+    else
+      print(i)
 }
 ```
 
@@ -121,17 +128,23 @@ rand5 <- function() sample(1:5, 1) # the given
 
 # Translate 5-sided die to fair coinflips
 coin.flip <- function(){
-n <- rand5()
-if (n==1 || n==2) return(0) else
-if (n==3 || n==4) return(1) else
-coin.flip()
+  n <- rand5()
+  if (n==1 || n==2)
+    return(0)
+  else
+    if (n==3 || n==4)
+      return(1)
+    else
+      coin.flip()
 }
 
 # Fair 7-sided die
 rand7 <- function(){
-x <- coin.flip() + coin.flip()*2 + coin.flip()*4
-while(x == 0) x <- coin.flip() + coin.flip()*2 + coin.flip()*4
-return(x)
+  x <- coin.flip() + coin.flip()*2 + coin.flip()*4
+  while (x == 0)
+    x <- coin.flip() + coin.flip()*2 + coin.flip()*4
+  
+  return(x)
 }
 ```
 
@@ -155,10 +168,12 @@ Rosenfield](http://stackoverflow.com/posts/137809/revisions) (and
 translated into R):
 
 ```r
-rand7 <- function(){
-x <- rand5() + (rand5() - 1)*5
-while (x > 21) x <- rand5() + (rand5() - 1)*5
-return(x%%7 + 1)
+rand7 <- function(.){
+  x <- rand5() + (rand5() - 1)*5
+  while (x > 21)
+    x <- rand5() + (rand5() - 1)*5
+  
+  return(x%%7 + 1)
 }
 ```
 
@@ -198,24 +213,24 @@ cl <- makeCluster(detectCores())
 clusterEvalQ(cl, rand5 <- function() sample(1:5, 1))
 
 clusterEvalQ(cl,
-coin.flip <- function(){
-n <- rand5()
-if (n==1 || n==2) return(0) else
-if (n==3 || n==4) return(1) else
-coin.flip()
-}
+  coin.flip <- function(.){
+    n <- rand5()
+    if (n==1 || n==2) return(0) else
+    if (n==3 || n==4) return(1) else
+    coin.flip()
+  }
 )
 
 # Our many die rolls, stored as a list
-results <- clusterApply(cl, 1:1e5, rand7)
+results <- parSapply(cl=cl, 1:1e5, rand7)
 table(unlist(results))
 ```
 
 which gives output
 
-```r
-1 2 3 4 5 6 7
-14279 14489 14210 14289 14279 14238 14216
+```
+1     2     3     4     5     6     7 
+14360 14344 13990 14447 14352 14133 14374 
 ```
 
 Which looks exactly like we had hoped it would. We can also look at a
@@ -223,8 +238,8 @@ quick summary
 
 ```r
 summary(unlist(results))
-Min. 1st Qu. Median Mean 3rd Qu. Max.
-1.000 2.000 4.000 3.994 6.000 7.000
+## Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    1       2       4       4       6       7 
 ```
 
 We can also flex our mighty R muscles and give a pretty histogram using
@@ -252,31 +267,24 @@ Note the difference. And for those who think I'm just being cranky for
 no good reason, here's a little speed test
 
 ```r
-time.capply <- system.time({results <- clusterApply(cl=cl,
-x=1:1e5, fun=rand7)})[3]
-time.capplylb <- system.time({results <- clusterApplyLB(cl=cl,
-x=1:1e5, fun=rand7)})[3]
-time.mclapply <- system.time({results <- mclapply(X=1:1e5,
-FUN=rand7, mc.cores=detectCores())})[3]
+time.capply <- system.time({results <- parSapply(cl=cl, 1:1e5, rand7)})[3]
+time.capplylb <- system.time({results <- parSapplyLB(cl=cl, 1:1e5, rand7)})[3]
+time.mclapply <- system.time({results <- mclapply(X=1:1e5, FUN=rand7, mc.cores=detectCores())})[3]
 
-cat(sprintf("
-With %d cores, the times
-are:
-clusterApply():\\t\\t%.3f seconds
-clusterApplyLB()\\t%.3f
-seconds
-mclapply():\\t\\t%.3f seconds
-", detectCores(), time.capply,
-time.capplylb, time.mclapply))
+cat(sprintf("With %d cores, the times are:
+  clusterApply():\t%.3f seconds
+  clusterApplyLB()\t%.3f seconds
+  mclapply():\t\t%.3f seconds
+", detectCores(), time.capply, time.capplylb, time.mclapply))
 ```
 
 which gives output
 
-```r
+```
 With 4 cores, the times are:
-clusterApply(): 17.119 seconds
-clusterApplyLB() 14.849 seconds
-mclapply(): 0.800 seconds
+  clusterApply():	0.502 seconds
+  clusterApplyLB()	0.492 seconds
+  mclapply():		0.416 seconds
 ```
 
 Again, note the difference.

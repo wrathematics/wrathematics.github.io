@@ -26,25 +26,25 @@ We will find primes in the following way:
 
 1.  2 and 3 are prime
 2.  We examine the odd integers (having already discovered the only
-    even prime) starting with \$latex i=5\$.
-3.  First, check if \$latex i\$ is of the form \$latex 6k+3\$ for some
-    integer \$latex k>0\$. If so, then \$latex i\$ can't be prime,
-    because then \$latex i=6k+3=3(2k+1)\$, and since \$latex k>0\$,
-    \$latex 2k+1 > 1\$ (so \$latex i
-eq 3\$). In this case, don't
-    even bother proceeding; replace \$latex i\$ with \$latex i+2\$ and
+    even prime) starting with $$ i=5 $$.
+3.  First, check if $$ i $$ is of the form $$ 6k+3 $$ for some
+    integer $$ k>0 $$. If so, then $$ i $$ can't be prime,
+    because then $$ i=6k+3=3(2k+1) $$, and since $$ k>0 $$,
+    $$ 2k+1 > 1 $$ (so $$ i
+eq 3 $$). In this case, don't
+    even bother proceeding; replace $$ i $$ with $$ i+2 $$ and
     start over.
-4.  Calculate \$latex s(i)=\\sqrt{i}\$. Among all known primes below
-    \$latex s(i)\$ (going no further for the same reason as that
+4.  Calculate $$ s(i)=\sqrt{i} $$. Among all known primes below
+    $$ s(i) $$ (going no further for the same reason as that
     outlined in [Problem
     3](http://librestats.wordpress.com/2011/08/16/project-euler-in-r-problem-3-2/ "Project Euler in R:  Problem 3")),
-    check if these primes divide into \$latex i\$. If we find one that
-    does, then there is no reason to proceed; \$latex i\$ is not prime.
-    Go back to 3. and try again with \$latex i\$ replced with
-    \$latex i+2\$. If none of the known primes below \$latex s(i)\$
-    divide \$latex i\$, then stop; \$latex i\$ must be prime. Add it to
+    check if these primes divide into $$ i $$. If we find one that
+    does, then there is no reason to proceed; $$ i $$ is not prime.
+    Go back to 3. and try again with $$ i $$ replced with
+    $$ i+2 $$. If none of the known primes below $$ s(i) $$
+    divide $$ i $$, then stop; $$ i $$ must be prime. Add it to
     the list of known primes.
-5.  Repeat this process by replacing \$latex i\$ with \$latex i+2\$
+5.  Repeat this process by replacing $$ i $$ with $$ i+2 $$
     until we have 10001 primes.
 
 It's nothing fancy, but it works. As for the implementation, believe it
@@ -60,38 +60,34 @@ ElapsedTime <- system.time({
 primes <- c(2, 3)
 i <- 3
 while (length(primes) < 10001){
-flag <- 0
-i <- i+2
-if (i%%6 == 3){
-flag <- 1
+  flag <- 0
+  i <- i+2
+  if (i%%6 == 3){
+    flag <- 1
+  }
+  if (flag == 0){
+    s <- sqrt(i)+1
+    for (prime in primes){
+      if ((i%%prime == 0)){
+        flag <- 1
+        break
+      }
+      if (prime > s){
+        break
+      }
+    }
+    if (flag == 0){
+      primes <- c(primes, i)
+    }
+  }
 }
-if (flag == 0){
-s <- sqrt(i)+1
-for (prime in primes){
-if ((i%%prime == 0)){
-flag <- 1
-break
-}
-if (prime > s){
-break
-}
-}
-if (flag == 0){
-primes <- c(primes, i)
-}
-}
-}
-
+ 
 answer <- tail(primes, 1)
 ##########################
 })[3]
 ElapsedMins <- floor(ElapsedTime/60)
 ElapsedSecs <- (ElapsedTime-ElapsedMins*60)
-cat(sprintf("
-The answer is: %d
-Total elapsed time: %d minutes and
-%f seconds
-",
+cat(sprintf("\nThe answer is:  %d\nTotal elapsed time:  %d minutes and %f seconds\n",
 answer, ElapsedMins, ElapsedSecs))
 ```
 
@@ -114,31 +110,31 @@ primes <- numeric(10001)
 primes[1:2] <- c(2, 3)
 i <- 3
 prime.position <- 3
-
+ 
 while (primes[10001] == 0){
-flag <- 0
-i <- i+2
-if (i%%6 == 3){
-flag <- 1
+  flag <- 0
+  i <- i+2
+  if (i%%6 == 3){
+    flag <- 1
+  }
+  if (flag == 0){
+    s <- sqrt(i)+1
+    for (prime in primes[primes > 0]){
+      if ((i%%prime == 0)){
+        flag <- 1
+        break
+      }
+      if (prime > s){
+        break
+      }
+    }
+    if (flag == 0){
+      primes[prime.position] <- i
+      prime.position<-prime.position+1
+    }
+  }
 }
-if (flag == 0){
-s <- sqrt(i)+1
-for (prime in primes[primes > 0]){
-if ((i%%prime == 0)){
-flag <- 1
-break
-}
-if (prime > s){
-break
-}
-}
-if (flag == 0){
-primes[prime.position] <- i
-prime.position<-prime.position+1
-}
-}
-}
-
+ 
 answer <- tail(primes, 1)
 ```
 
