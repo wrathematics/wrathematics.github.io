@@ -18,7 +18,7 @@ author: wrathematics
 
 I'm torn about talking about [floating point numbers](https://en.wikipedia.org/wiki/Floating_point) out in the open.  I feel like this is the sort of thing that should be hidden away from polite society, so as not to scare the children. It's just indecent!
 
-[![From SMBC Comics]({{ site.baseurl }}/assets/robot_internet.png)](http://www.smbc-comics.com/index.php?id=2999)
+[![From SMBC Comics]({{ site.url }}/assets/robot_internet.png)](http://www.smbc-comics.com/index.php?id=2999)
 [From SMBC Comics](http://www.smbc-comics.com/index.php?id=2999)
 
 A few years ago, I picked up the book *Handbook of Floating Point Arithmetic*, by Muller et al, which is *fantastic*.  Chapter 7 alone is worth the price of admission for me, so I definitely recommend this one if you're interested in this sort of thing.  In the first chapter, the authors present a beautiful example originally due to the mathematician Jean-Michel Muller (one of the book's coauthors), almost as a throwaway.  I was previously unaware of this example, and as much as I like the book, it doesn't really go into any detail for this deeply interesting, somewhat amazing example.  So I will present an explanation here. 

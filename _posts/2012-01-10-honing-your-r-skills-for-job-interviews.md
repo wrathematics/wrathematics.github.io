@@ -246,7 +246,7 @@ We can also flex our mighty R muscles and give a pretty histogram using
 Hadley Wickham's incredible [ggplot2
 package](http://cran.r-project.org/web/packages/ggplot2/index.html)
 
-[![]({{ site.baseurl }}/assets/rand7-300x300.png "rand7"){.alignnone
+[![]({{ site.url }}/assets/rand7-300x300.png "rand7"){.alignnone
 .size-medium .wp-image-468 width="300"
 height="300"}](http://librestats.com/wp-content/uploads/2012/01/rand7.png)
 

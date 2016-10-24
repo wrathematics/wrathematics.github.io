@@ -32,15 +32,15 @@ So this is probably no surprise to you, but MASS is the most "depended on" packa
 
 That's neat and all (actually it's crazy impressive), but I want a pretty graph.  Here's a link diagram of all the packages that depend on MASS
 
-![]({{ site.baseurl }}/assets/mass.png "mass")
+![]({{ site.url }}/assets/mass.png "mass")
 
 Which really is quite impressive. Here (and throughout), A-->B means B depends on A.  Another package that is near and dear to my heart is Dr. Hyndman's amazing [forecast package](http://cran.r-project.org/web/packages/forecast/index.html).  Here's a linkage graph for all packages that depend on and suggest forecast
 
-![]({{ site.baseurl }}/assets/forecast.png "forecast")
+![]({{ site.url }}/assets/forecast.png "forecast")
 
 I even included [CRAN taskview](http://cran.r-project.org/web/views/) diagrams.  Here's the linkage diagram for the machine learning taskview
 
-![]({{ site.baseurl }}/assets/ml.png "ml")
+![]({{ site.url }}/assets/ml.png "ml")
 
 I made a little function that's mostly coherent (lay off, I'm busy) so you can visualize your own package. Or spy on someone else's. I'm not here to judge you, friend.
 
@@ -109,19 +109,19 @@ Given the volume of stuff we're working with here, we need to think about the la
 
 Going through a few of the different options for layout algorithms, we can get different insights into these CRAN linkages.  First, using layout.fruchterman.reingold
 
-![]({{ site.baseurl }}/assets/1.png "1")
+![]({{ site.url }}/assets/1.png "1")
 
 Next with layout.circle (which for this data is kind of dumb, but you really get a sense for how much linking is going on)
 
-![]({{ site.baseurl }}/assets/3.png "3")
+![]({{ site.url }}/assets/3.png "3")
 
 We could also do layout.graphopt
 
-![]({{ site.baseurl }}/assets/4.png "4")
+![]({{ site.url }}/assets/4.png "4")
 
 And for my last example, layout.drl
 
-![]({{ site.baseurl }}/assets/5.png "5")
+![]({{ site.url }}/assets/5.png "5")
 
 Of course, if you have the dataset, you can tinker with these options some more and plot in your very own way.  For these graphs, assuming you store the csv in the object x, you might do something like:
 

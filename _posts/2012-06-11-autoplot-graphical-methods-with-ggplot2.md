@@ -197,7 +197,7 @@ dev.off()
 
 To get:
 
-![]({{ site.baseurl }}/assets/222.png "222")]
+![]({{ site.url }}/assets/222.png "222")]
 
 We can even extend this slightly so that the original series, forecast, prediction intervals, and the holdout (if present) are all plotted on the same graph:
 
@@ -248,7 +248,7 @@ autoplot(myforecast, holdout=x$xx)
 
 Which would produce graphs like:
 
-![]({{ site.baseurl }}/assets/222_holdout.png "222_holdout")
+![]({{ site.url }}/assets/222_holdout.png "222_holdout")
 
 Which personally, I like a lot, since it immediately shows you everything you want to know about the time series and your forecast.
 
@@ -349,7 +349,7 @@ autoplot.lm <- function(x, ..., which=c(1:3, 5), mfrow=c(1,1)){
 
 Which even has that annoying "Hit <Return> to see next plot" dialogue, and can make graphs like this:
 
-![]({{ site.baseurl }}/assets/lm.png "lm")
+![]({{ site.url }}/assets/lm.png "lm")
 
 Here's some example code to play with for autoplot.lm()
 

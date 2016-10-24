@@ -55,7 +55,7 @@ Ok, so the results then.
 We will again first look at the Language breakdown of the number of
 total files:
 
-![]({{ site.baseurl }}/assets/1_pct_contrib_source_files.png "1_pct_contrib_source_files")
+![]({{ site.url }}/assets/1_pct_contrib_source_files.png "1_pct_contrib_source_files")
 
 Here R is the clear victor by overwhelming majority.  But the real
 challenge is looking at the language breakdown by percentage
@@ -70,19 +70,19 @@ Errors likely occurred in determining what is C code and what is C++
 code.  That said, having made our choices, we have the following
 breakdown:
 
-![]({{ site.baseurl }}/assets/2_pct_contrib_code.png "2_pct_contrib_code")
+![]({{ site.url }}/assets/2_pct_contrib_code.png "2_pct_contrib_code")
 
 Here R is the clear victor, though in light of the doubt cast above, it
 is perhaps not as strong of a victory as we would hope.  To assuage all
 doubt, we can lump C and C++ together into one category:
 
-![]({{ site.baseurl }}/assets/3_pct_contrib_code_c-cpp-combined.png "3_pct_contrib_code_c.cpp.combined")
+![]({{ site.url }}/assets/3_pct_contrib_code_c-cpp-combined.png "3_pct_contrib_code_c.cpp.combined")
 
 And
 look at that; R is still winning.  Now, you probably see where this is
 headed:
 
-![]({{ site.baseurl }}/assets/4_pct_contrib_code_r-vs-all.png "4_pct_contrib_code_r.vs.all")
+![]({{ site.url }}/assets/4_pct_contrib_code_r-vs-all.png "4_pct_contrib_code_r.vs.all")
 
 Which
 is pretty darn good!  In short, the people who are outside of the core R

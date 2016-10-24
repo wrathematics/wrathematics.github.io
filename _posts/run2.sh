@@ -7,7 +7,8 @@ for f in `ls *.md`; do
   #sed -i -e 's/\\^/^/g' $f
   #sed -i -e 's/\\\]/\]/g' $f
 
-  sed -i '/layout: post/a comments: true' $f
+  #sed -i '/layout: post/a comments: true' $f
+  sed -i 's/site.baseurl/site.url/g' $f
 
 done
 

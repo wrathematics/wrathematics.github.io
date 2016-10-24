@@ -142,7 +142,7 @@ $`Level 3 cache misses`
 
 for `good()`.  Just staring at these huge values may not be easy on the eyes, so here's a plot showing this same information:
 
-![cache misses]({{ site.baseurl }}/assets/cache_misses.png)
+![cache misses]({{ site.url }}/assets/cache_misses.png)
 
 Here, lower is better, and so the clear winner is, as the name implies, `good()`. Another valuable measurement is the ratio of total cache misses (data and instruction) to total cache accesses.  Again, with pbdPAPI, measuring this is trivial:
 

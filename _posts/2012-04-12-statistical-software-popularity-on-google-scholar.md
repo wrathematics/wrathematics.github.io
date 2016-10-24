@@ -41,7 +41,7 @@ Finally, there are a few changes here over his previous versions of that graph.�
 
 Ok, so now that boring crap you skipped is out of the way, let's talk about the data.  The most recent data was collected on Monday, April 9th at around 4:00pm EDT.  [You can grab your very own copy of the data here](http://librestats.com/wp-content/uploads/2012/04/scholarly_impact_2012.4.9.csv).  I'm not sure why you would want it, but why does anyone want anything.  A timeplot of this data is over at [the software popularity article.](http://sites.google.com/site/r4statistics/popularity)  But who cares; timeplots are for boring nerds.  The real sweetness is in this sexy thing:
 
-![]({{ site.baseurl }}/assets/marketshare.png "marketshare")
+![]({{ site.url }}/assets/marketshare.png "marketshare")
 
 Isn't that beautiful?  Made, of course, with [the amazing ggplot2 package for R](http://had.co.nz/ggplot/).  I'm not sure what this type of plot is called.  It probably has a name, but I've always called it a "market share plot", since that's basically how they're used.  Anyone who's ever played [Civilization  III](https://en.wikipedia.org/wiki/Civilization_III) will be very familiar with these kinds of plots (they also show up a lot in political horse races).
 

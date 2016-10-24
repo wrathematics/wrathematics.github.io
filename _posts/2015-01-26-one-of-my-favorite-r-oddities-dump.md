@@ -75,6 +75,6 @@ Speaking of RStudio, did you know that it has a vim mode? It's far from a full v
 -   Code Editing
 -   Enable vim editing mode:
 
-![rstudio_vim]({{ site.baseurl }}/assets/rstudio_vim.png)
+![rstudio_vim]({{ site.url }}/assets/rstudio_vim.png)
 
 Of course, there's a [nice R plugin for vim itself](http://www.vim.org/scripts/script.php?script_id=2628).

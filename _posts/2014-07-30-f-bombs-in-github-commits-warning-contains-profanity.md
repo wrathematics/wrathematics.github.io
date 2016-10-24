@@ -34,14 +34,14 @@ I so fell in love with this data that I decided to put the data into an [R packa
 How many fucks do developers give?
 ==================================
 
-![numf]({{ site.baseurl }}/assets/numf.png)
+![numf]({{ site.url }}/assets/numf.png)
 
  
 
 What's the most common fuck to give?
 ====================================
 
-![commits]({{ site.baseurl }}/assets/commits.png)
+![commits]({{ site.url }}/assets/commits.png)
 
  
 
@@ -50,7 +50,7 @@ Who gives the most fucks?
 
 If we look at the users whose commits contain the most instances of "fuck", there is certainly a clear victor:
 
-![who_user]({{ site.baseurl }}/assets/who_user.png)
+![who_user]({{ site.url }}/assets/who_user.png)
 
 Let's group users by their repos (e.g.,
 [hadley/devtools](http://github.com/hadley/devtools) --- and no, he's
@@ -58,7 +58,7 @@ not on the list).  Maybe this way we'll see a different pattern...
 
 Nope, same guy:
 
-![who_repo]({{ site.baseurl }}/assets/who_repo.png)
+![who_repo]({{ site.url }}/assets/who_repo.png)
 
 I'm tempted to look at that repo, but I'm afraid I'll instantly lose my sanity, like some kind of rejected H. P. Lovecraft story.
 

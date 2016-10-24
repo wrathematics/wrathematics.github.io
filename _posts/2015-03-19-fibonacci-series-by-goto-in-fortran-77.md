@@ -15,7 +15,7 @@ author: wrathematics
 
 Someone recently found my blog by searching for the phrase "fibonacci series by goto in fortran 77":
 
-![fortran]({{ site.baseurl }}/assets/fortran.png)
+![fortran]({{ site.url }}/assets/fortran.png)
 
 Never let it be said that I am not a man of the people:
 

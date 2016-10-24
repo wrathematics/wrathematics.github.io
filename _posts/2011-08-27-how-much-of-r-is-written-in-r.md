@@ -36,13 +36,13 @@ first let's address the original question.
 By a respectable majority, most of the source code files of core R are
 written in R:
 
-![]({{ site.baseurl }}/assets/pct_r_source_files.png "pct_r_source_files")
+![]({{ site.url }}/assets/pct_r_source_files.png "pct_r_source_files")
 
 At first glance, it seems like Fortran doesn't give much of a
 contribution. However, when we look at the proportion of lines of code,
 we see something more reasonable:
 
-![]({{ site.baseurl }}/assets/pct_r_code.png "pct_r_code")
+![]({{ site.url }}/assets/pct_r_code.png "pct_r_code")
 
 So there you have it. Roughly 22% of R is written in R. I know some people
 want R to be written in R for some crazy reason; but really, if

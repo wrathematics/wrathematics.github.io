@@ -17,7 +17,7 @@ author: wrathematics
 
 I have a lot of projects that will take ages to finish (some are in such poor shape that I tuck them away in private repositories, so no one can see my shame).  So sometimes it's nice to just take a weekend and crank out something start to finish, even if it's dumb and no one cares about it and fewer people want it.  Which brings us to the matter at hand.  There's a relatively famous XKCD comic that argues that if you want a password that's easy to remember, you should combine a random set of words together to create a nonsensical, but easily remembered phrase.
 
-![password_strength]({{ site.baseurl }}/assets/password_strength.png)
+![password_strength]({{ site.url }}/assets/password_strength.png)
 
 Panels from the comic [*Password Strength*](https://xkcd.com/936/)
 

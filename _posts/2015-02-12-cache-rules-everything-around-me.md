@@ -28,7 +28,7 @@ In this post, we're going to be discussing:
 If none of these things is of interest you and you clicked anyway, please enjoy this picture of a cat:
 
 
-![kitty]({{ site.baseurl }}/assets/kitty.jpg)
+![kitty]({{ site.url }}/assets/kitty.jpg)
 
 Background
 ----------

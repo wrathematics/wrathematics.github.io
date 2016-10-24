@@ -25,7 +25,7 @@ Python?
 
 So I built my own library! With blackjack and pointers!
 
-![272742]({{ site.baseurl }}/assets/272742.png)
+![272742]({{ site.url }}/assets/272742.png)
 
 More specifically, me and [my buddy](https://github.com/heckendorfc) put together a little R package, available on [GitHub](https://github.com/wrathematics/ngram) and the [CRAN](http://cran.r-project.org/web/packages/ngram/index.html).  Package use is described in detail in the vignette.  Almost nothing in the internals of the package is actually done in R itself; even the processed data structure is just a linked list in C, returned to R as an external pointer. In fact, the entire thing can be compiled as a standalone library.  As such, the code contains many mystical incantations, like:
 
