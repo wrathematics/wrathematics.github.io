@@ -16,7 +16,7 @@ author: wrathematics
 
 As of this morning, the [getPass package](https://cran.r-project.org/package=getPass) version 0.1-1 is available on CRAN. The package offers a portable way to read user input without echoing the text, for the purposes of reading passwords. Some screenshots from various platforms are given below. 
 
-![getPass]({{ site.baseurl }}/assets/getPass.png)
+![getPass]({{ site.url }}/assets/getPass.png)
 
 Implementation details are described in the [package vignette](https://cran.r-project.org/web/packages/getPass/vignettes/getPass.html). The short version is, if you use...
 
