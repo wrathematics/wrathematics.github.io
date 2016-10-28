@@ -36,6 +36,7 @@ The great thing about doing computational work is that you don't have to accept 
 
 
 <br>
+
 ## The Benchmark
 
 The quick summary is that we'll be measuring RRR versus D&C wall clock run times with 5 replications with the following variations:
@@ -55,6 +56,7 @@ Reference and Atlas timings are with one core; OpenBLAS and MKL are with 4.
 
 
 <br>
+
 ## Results
 
 Displaying all of this is kind of difficult, but ggplot2 certainly does make the process less painful. And I've never claimed to be a vis expert; so I'd better not see a bunch of vis hipsters posting sassy bullshit on twitter over my plots.  
@@ -86,6 +88,7 @@ So there.  We settled it...
 
 
 <br>
+
 ## But Wait! There's More!
 
 We still haven't looked at the memory allocation issue.  This is actually much easier than you might expect if you've never worked with LAPACK before.  The reason is, LAPACK was originally written in Fortran 77 --- a language that does not support dynamic memory allocation.  So any time a function (`subroutine` in Fortran) needed some local workspace, then *you* had to allocate it for that function.  So all LAPACK functions are very up front in the documentation about allocation sizes.  They even have a cute way of telling you the allocation requirements at run time.
@@ -140,6 +143,7 @@ rrr(n)
 
 
 <br>
+
 ## Conclusions
 
 1. If you don't know how to manage the BLAS that you're using, for god's sake just use the Revolution/Microsoft distribution of R.
@@ -152,6 +156,7 @@ rrr(n)
 
 
 <br>
+
 ## Data and R Scripts
 
 Here's the data:
@@ -239,6 +244,7 @@ The other two plots are pretty obvious variations of this; subset for the second
 
 
 <br>
+
 ## A Note About Benchmarking
 
 Choosing sizes for benchmarking is important.  The problem sizes I chose aren't arbitrary.  Well...they're kind of arbitrary, but not completely.
