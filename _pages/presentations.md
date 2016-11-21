@@ -8,6 +8,24 @@ permalink: /presentations
 
 # Talks and Tutorials 
 
+
+### 2016
+
+* *Analyzing Analytics: Advanced Performance Analysis Tools for R*.
+Contributed talk at the <a href="http://sc16.supercomputing.org/presentation/?id=wksp146&sess=sess136">SC Workshop on Big Data Analytics: Challenges and Opportunities</a> workshop at SC16, Salt Lake City, UT, November 14, 2016. [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/presentations/2016/sc_hpcvis.pdf)
+
+* *The State of High Performance Computing in the Open Source R Ecosystem*.
+Invited talk at the <a href="http://www.intel.com/content/www/us/en/events/hpcdevcon/technical-sessions.html#drewschmidt">Intel HPC Developer Conference</a>, Salt Lake City, UT, November 13, 2016.  Slides available [here](https://wrathematics.github.io/hpcdevcon2016/).
+
+* *HPC with R: The Basics*.
+Invited tutorial at the <a href="http://www.intel.com/content/www/us/en/events/hpcdevcon/technical-sessions.html#tennessee">Intel HPC Developer Conference</a>, Salt Lake City, UT, November 12, 2016.  Slides available [here](https://wrathematics.github.io/hpcdevcon2016/).
+
+* *Introducing a New Client/Server Framework for Big
+Data Analytics with the R Language*.
+Contributed talk at the <a href="http://www.intel.com/content/www/us/en/events/hpcdevcon/technical-sessions.html#drewschmidt">XSEDE16 Conference</a>, Miami, FL, July 19, 2016.  [pdfbutton]({{site.baseurl | prepend:site.url}}/_pages/files/presentations/2016/xsede2016.pdf)
+
+
+
 ### 2015
 
 * *An Introduction to Programming in R*
