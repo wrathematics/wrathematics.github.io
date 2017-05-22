@@ -6,11 +6,12 @@ permalink: /about
 
 ![logo]({{site.baseurl | prepend:site.url}}/_pages/logos/shopping.png "Math by Baker, quote by Barbie"){:width="400px" .center-image align="right" style="margin: 10"}
 
-I'm a researcher working at the intersection of data science and high performance computing.  You can a possibly out of date [CV here]({{site.baseurl | prepend:site.url}}/_pages/files/DrewSchmidtResume.pdf).  For more detailed information:
+I'm a researcher working at the intersection of data science and high performance computing. See a probably out of date list of my:
+<!--You can a possibly out of date [CV here]({{site.baseurl | prepend:site.url}}/_pages/files/DrewSchmidtResume.pdf).  For more detailed information:-->
 
-* See my [code]({{site.baseurl | prepend:site.url}}/code)
-* See my [presentations]({{site.baseurl | prepend:site.url}}/presentations)
-* See my [publications]({{site.baseurl | prepend:site.url}}/publications)
+* [code]({{site.baseurl | prepend:site.url}}/code)
+* [presentations]({{site.baseurl | prepend:site.url}}/presentations)
+* [publications]({{site.baseurl | prepend:site.url}}/publications)
 
 
 <br>
