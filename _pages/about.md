@@ -6,7 +6,7 @@ permalink: /about
 
 ![logo]({{site.baseurl | prepend:site.url}}/_pages/logos/shopping.png "Math by Baker, quote by Barbie"){:width="400px" .center-image align="right" style="margin: 10"}
 
-I'm a researcher working at the intersection of data science and high performance computing.  I'm currently a graduate student, but I'm very interested in a full time data science or developer gig. You can [find my CV here]({{site.baseurl | prepend:site.url}}/_pages/files/DrewSchmidtResume.pdf).  For more detailed information:
+I'm a researcher working at the intersection of data science and high performance computing.  You can a possibly out of date [CV here]({{site.baseurl | prepend:site.url}}/_pages/files/DrewSchmidtResume.pdf).  For more detailed information:
 
 * See my [code]({{site.baseurl | prepend:site.url}}/code)
 * See my [presentations]({{site.baseurl | prepend:site.url}}/presentations)
