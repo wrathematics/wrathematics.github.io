@@ -1,14 +1,15 @@
-### Keybase proof
+==================================================================
+https://keybase.io/wrathematics
+--------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am wrathematics on github.
+  * I am an admin of https://wrathematics.github.io
   * I am wrathematics (https://keybase.io/wrathematics) on keybase.
   * I have a public key ASBGgOTJJPQ52zRvzAj47Z_ZAN4LzTlqGyx8BiFn6fAQLQo
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
-```json
 {
     "body": {
         "key": {
@@ -19,14 +20,14 @@ To claim this, I am signing this object:
             "username": "wrathematics"
         },
         "merkle_root": {
-            "ctime": 1497277676,
-            "hash": "e8a91a3259b33fc293b9cf636a4f9fc9664314d5edd59b62f07a1440b1b3c363336ca96069d0f5604b5a8f13887fb78d8d2e5b7dda0ffc16a6f876c32bf535c3",
-            "hash_meta": "25d3ce8b1924500dd2b78ebdd91ecdd15583e2811866c95119d3daa7a6072c2c",
-            "seqno": 1163378
+            "ctime": 1497278498,
+            "hash": "a5efc3f1c696cffb4f581839c72cfe03c4c80d72910f92a3cd77506e50480fe8e9690392d67d7122dfa5b14598f7360653ca074560d399d3b3b8c8fdb9deb64c",
+            "hash_meta": "a3f295c407184ef7da9c8c866e2610e8d3dbc291ac6eb31708a286bed1964e09",
+            "seqno": 1163420
         },
         "service": {
-            "name": "github",
-            "username": "wrathematics"
+            "hostname": "wrathematics.github.io",
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
@@ -35,32 +36,20 @@ To claim this, I am signing this object:
         "name": "keybase.io go client",
         "version": "1.0.24"
     },
-    "ctime": 1497277685,
+    "ctime": 1497278555,
     "expire_in": 504576000,
-    "prev": "c747f77fd00cc6999ccf3705a7788acad9c4c2a55522dabc8d23afd08dc65dca",
-    "seqno": 6,
+    "prev": "3a82345dcc3f798e1792113eca92a27d47633c33f7c1ff096706542efb34ca23",
+    "seqno": 15,
     "tag": "signature"
 }
-```
 
-with the key [ASBGgOTJJPQ52zRvzAj47Z_ZAN4LzTlqGyx8BiFn6fAQLQo](https://keybase.io/wrathematics), yielding the signature:
+which yields the signature:
 
-```
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRoDkyST0Ods0b8wI+O2f2QDeC805ahssfAYhZ+nwEC0Kp3BheWxvYWTFA0R7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwidWlkIjoiZWI5OWE0NmYwNWU0MjUwMDdlNWUzZjBhOTFmOWRhMTkiLCJ1c2VybmFtZSI6IndyYXRoZW1hdGljcyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NzI3NzY3NiwiaGFzaCI6ImU4YTkxYTMyNTliMzNmYzI5M2I5Y2Y2MzZhNGY5ZmM5NjY0MzE0ZDVlZGQ1OWI2MmYwN2ExNDQwYjFiM2MzNjMzMzZjYTk2MDY5ZDBmNTYwNGI1YThmMTM4ODdmYjc4ZDhkMmU1YjdkZGEwZmZjMTZhNmY4NzZjMzJiZjUzNWMzIiwiaGFzaF9tZXRhIjoiMjVkM2NlOGIxOTI0NTAwZGQyYjc4ZWJkZDkxZWNkZDE1NTgzZTI4MTE4NjZjOTUxMTlkM2RhYTdhNjA3MmMyYyIsInNlcW5vIjoxMTYzMzc4fSwic2VydmljZSI6eyJuYW1lIjoiZ2l0aHViIiwidXNlcm5hbWUiOiJ3cmF0aGVtYXRpY3MifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjQifSwiY3RpbWUiOjE0OTcyNzc2ODUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYzc0N2Y3N2ZkMDBjYzY5OTljY2YzNzA1YTc3ODhhY2FkOWM0YzJhNTU1MjJkYWJjOGQyM2FmZDA4ZGM2NWRjYSIsInNlcW5vIjo2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQDU32ztxRGLaqJpCUk0ZIVL/zsSxqoQl5yroI0OGzHynpExuBzQRmBBfXYVYnPsq/nG/Cwzv9G2HbGVtB3SqwQeoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAthIO3IuLPXntTzz4j4ZzXQ8jHaYNVjA0dnwN0TgIBv6N0YWfNAgKndmVyc2lvbgE=
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRoDkyST0Ods0b8wI+O2f2QDeC805ahssfAYhZ+nwEC0Kp3BheWxvYWTFA1N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwidWlkIjoiZWI5OWE0NmYwNWU0MjUwMDdlNWUzZjBhOTFmOWRhMTkiLCJ1c2VybmFtZSI6IndyYXRoZW1hdGljcyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NzI3ODQ5OCwiaGFzaCI6ImE1ZWZjM2YxYzY5NmNmZmI0ZjU4MTgzOWM3MmNmZTAzYzRjODBkNzI5MTBmOTJhM2NkNzc1MDZlNTA0ODBmZThlOTY5MDM5MmQ2N2Q3MTIyZGZhNWIxNDU5OGY3MzYwNjUzY2EwNzQ1NjBkMzk5ZDNiM2I4YzhmZGI5ZGViNjRjIiwiaGFzaF9tZXRhIjoiYTNmMjk1YzQwNzE4NGVmN2RhOWM4Yzg2NmUyNjEwZThkM2RiYzI5MWFjNmViMzE3MDhhMjg2YmVkMTk2NGUwOSIsInNlcW5vIjoxMTYzNDIwfSwic2VydmljZSI6eyJob3N0bmFtZSI6IndyYXRoZW1hdGljcy5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yNCJ9LCJjdGltZSI6MTQ5NzI3ODU1NSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIzYTgyMzQ1ZGNjM2Y3OThlMTc5MjExM2VjYTkyYTI3ZDQ3NjMzYzMzZjdjMWZmMDk2NzA2NTQyZWZiMzRjYTIzIiwic2Vxbm8iOjE1LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQDXDGvO6NWz1En9RKCleR5fXhQ7LBcySWqeFF/OFQs8FjXA3cLzKUcq6K29465KO18Wiwpt6VfktGdU/9pPCmw6oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAPnEJijqzW5eR50+6taJ20737ZZAqtFpvz66wJ1vAfXaN0YWfNAgKndmVyc2lvbgE=
 
-```
+And finally, I am proving ownership of this host by posting or
+appending to this document.
 
-And finally, I am proving ownership of the github account by posting this as a gist.
+View my publicly-auditable identity here: https://keybase.io/wrathematics
 
-### My publicly-auditable identity:
-
-https://keybase.io/wrathematics
-
-### From the command line:
-
-Consider the [keybase command line program](https://keybase.io/download).
-
-```bash
-# look me up
-keybase id wrathematics
-```
+==================================================================
