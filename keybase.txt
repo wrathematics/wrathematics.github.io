@@ -1,0 +1,66 @@
+### Keybase proof
+
+I hereby claim:
+
+  * I am wrathematics on github.
+  * I am wrathematics (https://keybase.io/wrathematics) on keybase.
+  * I have a public key ASBGgOTJJPQ52zRvzAj47Z_ZAN4LzTlqGyx8BiFn6fAQLQo
+
+To claim this, I am signing this object:
+
+```json
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01204680e4c924f439db346fcc08f8ed9fd900de0bcd396a1b2c7c062167e9f0102d0a",
+            "host": "keybase.io",
+            "kid": "01204680e4c924f439db346fcc08f8ed9fd900de0bcd396a1b2c7c062167e9f0102d0a",
+            "uid": "eb99a46f05e425007e5e3f0a91f9da19",
+            "username": "wrathematics"
+        },
+        "merkle_root": {
+            "ctime": 1497277676,
+            "hash": "e8a91a3259b33fc293b9cf636a4f9fc9664314d5edd59b62f07a1440b1b3c363336ca96069d0f5604b5a8f13887fb78d8d2e5b7dda0ffc16a6f876c32bf535c3",
+            "hash_meta": "25d3ce8b1924500dd2b78ebdd91ecdd15583e2811866c95119d3daa7a6072c2c",
+            "seqno": 1163378
+        },
+        "service": {
+            "name": "github",
+            "username": "wrathematics"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1497277685,
+    "expire_in": 504576000,
+    "prev": "c747f77fd00cc6999ccf3705a7788acad9c4c2a55522dabc8d23afd08dc65dca",
+    "seqno": 6,
+    "tag": "signature"
+}
+```
+
+with the key [ASBGgOTJJPQ52zRvzAj47Z_ZAN4LzTlqGyx8BiFn6fAQLQo](https://keybase.io/wrathematics), yielding the signature:
+
+```
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRoDkyST0Ods0b8wI+O2f2QDeC805ahssfAYhZ+nwEC0Kp3BheWxvYWTFA0R7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDY4MGU0YzkyNGY0MzlkYjM0NmZjYzA4ZjhlZDlmZDkwMGRlMGJjZDM5NmExYjJjN2MwNjIxNjdlOWYwMTAyZDBhIiwidWlkIjoiZWI5OWE0NmYwNWU0MjUwMDdlNWUzZjBhOTFmOWRhMTkiLCJ1c2VybmFtZSI6IndyYXRoZW1hdGljcyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NzI3NzY3NiwiaGFzaCI6ImU4YTkxYTMyNTliMzNmYzI5M2I5Y2Y2MzZhNGY5ZmM5NjY0MzE0ZDVlZGQ1OWI2MmYwN2ExNDQwYjFiM2MzNjMzMzZjYTk2MDY5ZDBmNTYwNGI1YThmMTM4ODdmYjc4ZDhkMmU1YjdkZGEwZmZjMTZhNmY4NzZjMzJiZjUzNWMzIiwiaGFzaF9tZXRhIjoiMjVkM2NlOGIxOTI0NTAwZGQyYjc4ZWJkZDkxZWNkZDE1NTgzZTI4MTE4NjZjOTUxMTlkM2RhYTdhNjA3MmMyYyIsInNlcW5vIjoxMTYzMzc4fSwic2VydmljZSI6eyJuYW1lIjoiZ2l0aHViIiwidXNlcm5hbWUiOiJ3cmF0aGVtYXRpY3MifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjQifSwiY3RpbWUiOjE0OTcyNzc2ODUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYzc0N2Y3N2ZkMDBjYzY5OTljY2YzNzA1YTc3ODhhY2FkOWM0YzJhNTU1MjJkYWJjOGQyM2FmZDA4ZGM2NWRjYSIsInNlcW5vIjo2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQDU32ztxRGLaqJpCUk0ZIVL/zsSxqoQl5yroI0OGzHynpExuBzQRmBBfXYVYnPsq/nG/Cwzv9G2HbGVtB3SqwQeoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAthIO3IuLPXntTzz4j4ZzXQ8jHaYNVjA0dnwN0TgIBv6N0YWfNAgKndmVyc2lvbgE=
+
+```
+
+And finally, I am proving ownership of the github account by posting this as a gist.
+
+### My publicly-auditable identity:
+
+https://keybase.io/wrathematics
+
+### From the command line:
+
+Consider the [keybase command line program](https://keybase.io/download).
+
+```bash
+# look me up
+keybase id wrathematics
+```
